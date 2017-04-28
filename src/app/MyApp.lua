@@ -12,8 +12,8 @@ function MyApp:loadPackage()
     require "app.config.config"
     require "app.StartAndUpdateScene"
     require("app.utils.utils")
-    require "app.network.ServerProxy"
-    require('app.utils.GameCenterIos')
+    -- require "app.network.ServerProxy"
+    -- require('app.utils.GameCenterIos')
     require("app.LoadingScene")
 end
 
@@ -102,7 +102,7 @@ function MyApp:switchToStartScene()
     local GameCenterIos =  require('app.utils.GameCenterIos')
     GameCenterIos.gcLogin()
     self:initData()
-    self:sendErrorLog()
+    -- self:sendErrorLog()
     self:initAudio()
     --PigTower推送
     cc.UserDefault:getInstance():setIntegerForKey("push_pigTower",UserData:getCurrentTopLevel())

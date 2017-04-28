@@ -56,10 +56,13 @@
 		9FF504861A5E881200AFDA55 /* libsimulator Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF5047E1A5E86D600AFDA55 /* libsimulator Mac.a */; };
 		9FF504871A5E88CE00AFDA55 /* libsimulator iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF504801A5E86D600AFDA55 /* libsimulator iOS.a */; };
 		9FFC07361A4A764100AED399 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FFC07341A4A764100AED399 /* MainMenu.xib */; };
-		BB2775BA1EADCD610037D130 /* SpineCache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB2775B81EADCD610037D130 /* SpineCache.cpp */; };
-		BB694AAD1EB2E21E008437AC /* MusicFade.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB694AA91EB2E21E008437AC /* MusicFade.cpp */; };
-		BB694AAE1EB2E21E008437AC /* SoundPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB694AAB1EB2E21E008437AC /* SoundPlayer.cpp */; };
-		BB694AB31EB2E720008437AC /* MyboDevice.mm in Sources */ = {isa = PBXBuildFile; fileRef = BB694AB21EB2E720008437AC /* MyboDevice.mm */; };
+		BB2EDB3F1EB33E8000F8AC14 /* SpineCache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB2EDB3D1EB33E8000F8AC14 /* SpineCache.cpp */; };
+		BB2EDB451EB33E8A00F8AC14 /* MusicFade.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB2EDB411EB33E8A00F8AC14 /* MusicFade.cpp */; };
+		BB2EDB461EB33E8A00F8AC14 /* SoundPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB2EDB431EB33E8A00F8AC14 /* SoundPlayer.cpp */; };
+		BB2EDB4C1EB33E9400F8AC14 /* MusicFade.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB2EDB481EB33E9400F8AC14 /* MusicFade.cpp */; };
+		BB2EDB4D1EB33E9400F8AC14 /* SoundPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB2EDB4A1EB33E9400F8AC14 /* SoundPlayer.cpp */; };
+		BB2EDB501EB33EB400F8AC14 /* MyboDevice.mm in Sources */ = {isa = PBXBuildFile; fileRef = BB2EDB4F1EB33EB400F8AC14 /* MyboDevice.mm */; };
+		BB2EDB531EB3426800F8AC14 /* lua_mybo_sound_player_auto.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB2EDB521EB3426800F8AC14 /* lua_mybo_sound_player_auto.cpp */; };
 		BB694AB51EB2E886008437AC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB694AB41EB2E886008437AC /* AVFoundation.framework */; };
 		C03781BB18BF655400FE4F13 /* src in Resources */ = {isa = PBXBuildFile; fileRef = C03781B818BF655400FE4F13 /* src */; };
 		C03781BC18BF655400FE4F13 /* src in Resources */ = {isa = PBXBuildFile; fileRef = C03781B818BF655400FE4F13 /* src */; };
@@ -231,14 +234,19 @@
 		9FF504831A5E87B100AFDA55 /* ConsoleWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConsoleWindowController.m; sourceTree = "<group>"; };
 		9FFC07351A4A764100AED399 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		9FFC07371A4A765100AED399 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/MainMenu.xib"; sourceTree = "<group>"; };
-		BB2775B81EADCD610037D130 /* SpineCache.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpineCache.cpp; sourceTree = "<group>"; };
-		BB2775B91EADCD610037D130 /* SpineCache.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SpineCache.hpp; sourceTree = "<group>"; };
-		BB694AA91EB2E21E008437AC /* MusicFade.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MusicFade.cpp; sourceTree = "<group>"; };
-		BB694AAA1EB2E21E008437AC /* MusicFade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicFade.h; sourceTree = "<group>"; };
-		BB694AAB1EB2E21E008437AC /* SoundPlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SoundPlayer.cpp; sourceTree = "<group>"; };
-		BB694AAC1EB2E21E008437AC /* SoundPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundPlayer.h; sourceTree = "<group>"; };
-		BB694AB01EB2E504008437AC /* MyboDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyboDevice.h; sourceTree = "<group>"; };
-		BB694AB21EB2E720008437AC /* MyboDevice.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MyboDevice.mm; sourceTree = "<group>"; };
+		BB2EDB3D1EB33E8000F8AC14 /* SpineCache.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpineCache.cpp; sourceTree = "<group>"; };
+		BB2EDB3E1EB33E8000F8AC14 /* SpineCache.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SpineCache.hpp; sourceTree = "<group>"; };
+		BB2EDB411EB33E8A00F8AC14 /* MusicFade.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MusicFade.cpp; sourceTree = "<group>"; };
+		BB2EDB421EB33E8A00F8AC14 /* MusicFade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicFade.h; sourceTree = "<group>"; };
+		BB2EDB431EB33E8A00F8AC14 /* SoundPlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SoundPlayer.cpp; sourceTree = "<group>"; };
+		BB2EDB441EB33E8A00F8AC14 /* SoundPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundPlayer.h; sourceTree = "<group>"; };
+		BB2EDB481EB33E9400F8AC14 /* MusicFade.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MusicFade.cpp; sourceTree = "<group>"; };
+		BB2EDB491EB33E9400F8AC14 /* MusicFade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicFade.h; sourceTree = "<group>"; };
+		BB2EDB4A1EB33E9400F8AC14 /* SoundPlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SoundPlayer.cpp; sourceTree = "<group>"; };
+		BB2EDB4B1EB33E9400F8AC14 /* SoundPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundPlayer.h; sourceTree = "<group>"; };
+		BB2EDB4E1EB33EA500F8AC14 /* MyboDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MyboDevice.h; path = ../Classes/MyboDevice.h; sourceTree = "<group>"; };
+		BB2EDB4F1EB33EB400F8AC14 /* MyboDevice.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MyboDevice.mm; path = ../Classes/MyboDevice.mm; sourceTree = "<group>"; };
+		BB2EDB521EB3426800F8AC14 /* lua_mybo_sound_player_auto.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lua_mybo_sound_player_auto.cpp; sourceTree = "<group>"; };
 		BB694AB41EB2E886008437AC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		C03781AE18BF654500FE4F13 /* cocos2d_lua_bindings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2d_lua_bindings.xcodeproj; path = "../../cocos2d-x/cocos/scripting/lua-bindings/proj.ios_mac/cocos2d_lua_bindings.xcodeproj"; sourceTree = "<group>"; };
 		C03781B818BF655400FE4F13 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; name = src; path = ../../../src; sourceTree = "<group>"; };
@@ -348,6 +356,7 @@
 		5023817117EBBE3400990C9B /* mac */ = {
 			isa = PBXGroup;
 			children = (
+				BB2EDB401EB33E8A00F8AC14 /* audio */,
 				9FF504811A5E87B100AFDA55 /* ConsoleWindow.xib */,
 				9FF504821A5E87B100AFDA55 /* ConsoleWindowController.h */,
 				9FF504831A5E87B100AFDA55 /* ConsoleWindowController.m */,
@@ -391,31 +400,53 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BB2775B11EADCD410037D130 /* spine */ = {
+		BB2EDB3C1EB33E8000F8AC14 /* spine */ = {
 			isa = PBXGroup;
 			children = (
-				BB2775B91EADCD610037D130 /* SpineCache.hpp */,
-				BB2775B81EADCD610037D130 /* SpineCache.cpp */,
+				BB2EDB3D1EB33E8000F8AC14 /* SpineCache.cpp */,
+				BB2EDB3E1EB33E8000F8AC14 /* SpineCache.hpp */,
 			);
 			name = spine;
+			path = ../Classes/spine;
 			sourceTree = "<group>";
 		};
-		BB694AA81EB2E21E008437AC /* audio */ = {
+		BB2EDB401EB33E8A00F8AC14 /* audio */ = {
 			isa = PBXGroup;
 			children = (
-				BB694AA91EB2E21E008437AC /* MusicFade.cpp */,
-				BB694AAA1EB2E21E008437AC /* MusicFade.h */,
-				BB694AAB1EB2E21E008437AC /* SoundPlayer.cpp */,
-				BB694AAC1EB2E21E008437AC /* SoundPlayer.h */,
+				BB2EDB411EB33E8A00F8AC14 /* MusicFade.cpp */,
+				BB2EDB421EB33E8A00F8AC14 /* MusicFade.h */,
+				BB2EDB431EB33E8A00F8AC14 /* SoundPlayer.cpp */,
+				BB2EDB441EB33E8A00F8AC14 /* SoundPlayer.h */,
 			);
-			path = audio;
+			name = audio;
+			path = ../../Classes/audio;
+			sourceTree = "<group>";
+		};
+		BB2EDB471EB33E9400F8AC14 /* audio */ = {
+			isa = PBXGroup;
+			children = (
+				BB2EDB481EB33E9400F8AC14 /* MusicFade.cpp */,
+				BB2EDB491EB33E9400F8AC14 /* MusicFade.h */,
+				BB2EDB4A1EB33E9400F8AC14 /* SoundPlayer.cpp */,
+				BB2EDB4B1EB33E9400F8AC14 /* SoundPlayer.h */,
+			);
+			name = audio;
+			path = ../Classes/audio;
+			sourceTree = "<group>";
+		};
+		BB2EDB511EB3426800F8AC14 /* lua-bind */ = {
+			isa = PBXGroup;
+			children = (
+				BB2EDB521EB3426800F8AC14 /* lua_mybo_sound_player_auto.cpp */,
+			);
+			name = "lua-bind";
+			path = "../Classes/lua-bind";
 			sourceTree = "<group>";
 		};
 		BB694AAF1EB2E4CD008437AC /* native */ = {
 			isa = PBXGroup;
 			children = (
 				BB694AB11EB2E6FC008437AC /* ios */,
-				BB694AB01EB2E504008437AC /* MyboDevice.h */,
 			);
 			name = native;
 			sourceTree = "<group>";
@@ -423,7 +454,7 @@
 		BB694AB11EB2E6FC008437AC /* ios */ = {
 			isa = PBXGroup;
 			children = (
-				BB694AB21EB2E720008437AC /* MyboDevice.mm */,
+				BB2EDB4F1EB33EB400F8AC14 /* MyboDevice.mm */,
 			);
 			name = ios;
 			sourceTree = "<group>";
@@ -497,9 +528,11 @@
 		F293BB7C15EB830F00256477 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				BB2EDB511EB3426800F8AC14 /* lua-bind */,
+				BB2EDB4E1EB33EA500F8AC14 /* MyboDevice.h */,
+				BB2EDB471EB33E9400F8AC14 /* audio */,
+				BB2EDB3C1EB33E8000F8AC14 /* spine */,
 				BB694AAF1EB2E4CD008437AC /* native */,
-				BB694AA81EB2E21E008437AC /* audio */,
-				BB2775B11EADCD410037D130 /* spine */,
 				15427CE2198F237300DC375D /* lua_module_register.h */,
 				F293BB7E15EB831F00256477 /* AppDelegate.cpp */,
 				F293BB7F15EB831F00256477 /* AppDelegate.h */,
@@ -742,14 +775,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB2EDB531EB3426800F8AC14 /* lua_mybo_sound_player_auto.cpp in Sources */,
 				5023812517EBBCAC00990C9B /* RootViewController.mm in Sources */,
-				BB694AAD1EB2E21E008437AC /* MusicFade.cpp in Sources */,
+				BB2EDB451EB33E8A00F8AC14 /* MusicFade.cpp in Sources */,
 				F293BB9C15EB831F00256477 /* AppDelegate.cpp in Sources */,
 				5023812417EBBCAC00990C9B /* main.m in Sources */,
-				BB694AAE1EB2E21E008437AC /* SoundPlayer.cpp in Sources */,
-				BB2775BA1EADCD610037D130 /* SpineCache.cpp in Sources */,
-				BB694AB31EB2E720008437AC /* MyboDevice.mm in Sources */,
+				BB2EDB461EB33E8A00F8AC14 /* SoundPlayer.cpp in Sources */,
+				BB2EDB3F1EB33E8000F8AC14 /* SpineCache.cpp in Sources */,
+				BB2EDB501EB33EB400F8AC14 /* MyboDevice.mm in Sources */,
 				5023811817EBBCAC00990C9B /* AppController.mm in Sources */,
+				BB2EDB4D1EB33E9400F8AC14 /* SoundPlayer.cpp in Sources */,
+				BB2EDB4C1EB33E9400F8AC14 /* MusicFade.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

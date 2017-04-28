@@ -139,7 +139,7 @@ def main():
         output_dir = '%s/cocos/scripting/lua-bindings/auto' % project_root
 
         cmd_args = {'cocos2dx.ini' : ('cocos2d-x', 'lua_cocos2dx_auto'), \
-                    'mybo_sound_player.ini':('SoundPlayer','lua_SoundPlayer_auto'),\
+                    'mybo_sound_player.ini':('mybo_sound_player','lua_mybo_sound_player_auto'),\
                     }
         target = 'lua'
         generator_py = '%s/generator.py' % cxx_generator_root
