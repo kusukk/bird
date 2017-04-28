@@ -1,0 +1,76 @@
+{
+"skeleton": { "hash": "MhU38NT+/mDIarBBhELy8M0Uh6g", "spine": "3.4.02", "width": 40.66, "height": 16, "images": "./picture/" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "wood", "parent": "root", "length": 13.2, "rotation": 93.75, "x": 0.87, "y": -0.66 }
+],
+"slots": [
+	{ "name": "flag", "bone": "wood", "attachment": "flag/08" },
+	{ "name": "wood", "bone": "wood", "attachment": "wood" }
+],
+"skins": {
+	"default": {
+		"flag": {
+			"flag/01": { "x": 6.09, "y": -19.28, "rotation": -93.75, "width": 36, "height": 13 },
+			"flag/02": { "x": 6.07, "y": -18.78, "rotation": -93.75, "width": 35, "height": 13 },
+			"flag/03": { "x": 6.09, "y": -18.27, "rotation": -93.75, "width": 34, "height": 13 },
+			"flag/04": { "x": 6.13, "y": -17.26, "rotation": -93.75, "width": 32, "height": 13 },
+			"flag/05": { "x": 6.06, "y": -17.77, "rotation": -93.75, "width": 33, "height": 12 },
+			"flag/06": { "x": 5.72, "y": -16.26, "rotation": -93.75, "width": 30, "height": 11 },
+			"flag/07": { "x": 5.85, "y": -17.74, "rotation": -93.75, "width": 34, "height": 12 },
+			"flag/08": { "x": 6.18, "y": -18.75, "rotation": -93.75, "width": 35, "height": 13 }
+		},
+		"wood": {
+			"wood": { "x": 7.89, "y": 0.83, "rotation": -93.75, "width": 7, "height": 16 }
+		}
+	}
+},
+"animations": {
+	"run": {
+		"slots": {
+			"flag": {
+				"attachment": [
+					{ "time": 0, "name": "flag/01" },
+					{ "time": 0.1, "name": "flag/02" },
+					{ "time": 0.2, "name": "flag/03" },
+					{ "time": 0.3, "name": "flag/04" },
+					{ "time": 0.4, "name": "flag/05" },
+					{ "time": 0.5, "name": "flag/06" },
+					{ "time": 0.6, "name": "flag/07" },
+					{ "time": 0.7, "name": "flag/08" },
+					{ "time": 0.8, "name": "flag/01" }
+				]
+			},
+			"wood": {
+				"attachment": [
+					{ "time": 0, "name": "wood" }
+				]
+			}
+		},
+		"bones": {
+			"wood": {
+				"rotate": [
+					{ "time": 0, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 }
+				]
+			},
+			"root": {
+				"rotate": [
+					{ "time": 0, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 }
+				]
+			}
+		}
+	}
+}
+}

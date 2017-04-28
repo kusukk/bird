@@ -1,0 +1,69 @@
+{
+"skeleton": { "hash": "oXLFBYqNPrt4p5tVOS6lW04+dHo", "spine": "3.4.02", "width": 0, "height": 0, "images": "./picture/" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "icon", "parent": "root", "y": -114.79 },
+	{ "name": "bone2", "parent": "icon", "x": -0.14, "y": 119.68 }
+],
+"slots": [
+	{ "name": "lv_item_unlock_img", "bone": "bone2", "attachment": "0" }
+],
+"skins": {
+	"default": {
+		"lv_item_unlock_img": {
+			"0": { "x": -0.71, "y": -3.34, "scaleX": 1.09, "scaleY": 1.09, "width": 82, "height": 88 }
+		}
+	}
+},
+"events": {
+	"change": {}
+},
+"animations": {
+	"change_animation": {
+		"slots": {
+			"lv_item_unlock_img": {
+				"color": [
+					{
+						"time": 0,
+						"color": "ffffff00",
+						"curve": [ 0.266, 0, 0.904, 0.65 ]
+					},
+					{ "time": 0.6666, "color": "ffffffff" }
+				]
+			}
+		},
+		"bones": {
+			"bone2": {
+				"scale": [
+					{
+						"time": 0,
+						"x": 1.446,
+						"y": 1.413,
+						"curve": [ 0.752, 0, 0.928, 0.53 ]
+					},
+					{ "time": 0.6666, "x": 1.21, "y": 1.228 },
+					{
+						"time": 1,
+						"x": 0.795,
+						"y": 0.795,
+						"curve": [ 0.25, 0, 0.02, 1 ]
+					},
+					{
+						"time": 1.3,
+						"x": 1.189,
+						"y": 1.189,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.5333,
+						"x": 0.962,
+						"y": 0.962,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.7666, "x": 1, "y": 1 }
+				]
+			}
+		}
+	}
+}
+}

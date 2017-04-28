@@ -1,0 +1,77 @@
+{
+"skeleton": { "hash": "o75cNv8BN6SjC6zX4t+YQvJ0wR8", "spine": "3.4.02", "width": 101.26, "height": 95.74, "images": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "x": -2.06, "y": 1.68 },
+	{ "name": "twister-icon2", "parent": "bone", "x": 0.94, "y": 3.75, "scaleX": 0.519, "scaleY": 0.519 },
+	{ "name": "twister_icon1", "parent": "bone", "x": 0.57, "y": 3.52, "scaleX": 0.519, "scaleY": 0.519 }
+],
+"slots": [
+	{ "name": "twister-icon1", "bone": "twister_icon1", "attachment": "twister-icon1" },
+	{ "name": "twister-icon2", "bone": "twister-icon2", "attachment": "twister-icon2" },
+	{ "name": "twister_icon1", "bone": "twister_icon1", "attachment": "twister_icon1" },
+	{ "name": "twister_icon2", "bone": "twister-icon2", "attachment": "twister_icon2" }
+],
+"skins": {
+	"default": {
+		"twister-icon1": {
+			"twister-icon1": { "x": -37.94, "y": 38.11, "width": 102, "height": 106 }
+		},
+		"twister-icon2": {
+			"twister-icon2": { "x": 5.22, "y": -40.78, "width": 195, "height": 103 }
+		},
+		"twister_icon1": {
+			"twister_icon1": { "x": 14.46, "y": 39.44, "width": 150, "height": 103 }
+		},
+		"twister_icon2": {
+			"twister_icon2": { "x": 56.42, "y": -42.18, "width": 87, "height": 103 }
+		}
+	}
+},
+"animations": {
+	"run": {
+		"slots": {
+			"twister-icon1": {
+				"attachment": [
+					{ "time": 0, "name": "twister-icon1" }
+				]
+			},
+			"twister_icon1": {
+				"attachment": [
+					{ "time": 0, "name": "twister_icon1" }
+				]
+			}
+		},
+		"bones": {
+			"twister-icon2": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.4, "angle": -79.9 },
+					{ "time": 0.7666, "angle": 177.82 },
+					{ "time": 1.5, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 }
+				]
+			},
+			"twister_icon1": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.4, "angle": -88.88 },
+					{ "time": 0.7666, "angle": 170.37 },
+					{ "time": 1.5, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 }
+				]
+			}
+		}
+	}
+}
+}

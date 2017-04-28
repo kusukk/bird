@@ -1,0 +1,704 @@
+{
+"skeleton": { "hash": "Q+mR1rK8ADbj/Sg/wf6qxJDEMWo", "spine": "3.4.02", "width": 0, "height": 0, "images": "./picture/bread/" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "holeside1", "parent": "root", "x": 62.8, "y": -32.37 },
+	{ "name": "holeside2", "parent": "root", "x": -56.87, "y": -38.36 }
+],
+"slots": [
+	{ "name": "holeside1", "bone": "holeside1", "attachment": "holeside1" },
+	{ "name": "holeside2", "bone": "holeside2", "attachment": "holeside2" }
+],
+"skins": {
+	"default": {
+		"holeside1": {
+			"holeside1": {
+				"type": "mesh",
+				"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0 ],
+				"triangles": [ 1, 2, 3, 1, 3, 0 ],
+				"vertices": [ 41.82, -42.74, -20.17, -42.74, -20.17, 20.25, 41.82, 20.25 ],
+				"hull": 4,
+				"edges": [ 0, 2, 2, 4, 4, 6, 0, 6 ],
+				"width": 62,
+				"height": 63
+			}
+		},
+		"holeside2": {
+			"holeside2": {
+				"type": "mesh",
+				"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0 ],
+				"triangles": [ 1, 2, 3, 1, 3, 0 ],
+				"vertices": [ 22.49, -38.87, -43.5, -38.87, -43.5, 18.12, 22.49, 18.12 ],
+				"hull": 4,
+				"edges": [ 0, 2, 2, 4, 4, 6, 0, 6 ],
+				"width": 66,
+				"height": 57
+			}
+		}
+	}
+},
+"events": {
+	"eat": {}
+},
+"animations": {
+	"1": {
+		"slots": {
+			"holeside1": {
+				"color": [
+					{ "time": 0, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.5333, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 0.5666, "name": "holeside1" },
+					{ "time": 1.5333, "name": null }
+				]
+			},
+			"holeside2": {
+				"color": [
+					{ "time": 0, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.5333, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 0.5666, "name": "holeside2" },
+					{ "time": 1.5333, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"holeside2": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1.5333, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.5333, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 1.5333, "x": 1, "y": 1 }
+				]
+			},
+			"holeside1": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1.5333, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.5333, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 1.5333, "x": 1, "y": 1 }
+				]
+			},
+			"root": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1.5333, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.5333, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 1.5333, "x": 1, "y": 1 }
+				]
+			}
+		},
+		"deform": {
+			"default": {
+				"holeside1": {
+					"holeside1": [
+						{
+							"time": 0,
+							"curve": [ 0.25, 0, 0.75, 1 ]
+						},
+						{
+							"time": 0.5666,
+							"vertices": [ -5.00785, 7.19079, 8.77625, 7.19079, 8.77625, -6.81562, -5.00785, -6.81562 ],
+							"curve": [ 0.25, 0, 0.75, 1 ]
+						},
+						{
+							"time": 0.7,
+							"vertices": [ -4.236, -6.45903, -12.59695, -0.22006, -20.69597, 2.58399, -16.45398, -8.87101 ],
+							"curve": [ 0.248, 0, 0.627, 0.51 ]
+						},
+						{
+							"time": 1.0666,
+							"vertices": [ -1.40101, -4.81798, -13.21499, 1.10201, -16.42502, -1.49402, -19.27898, -9.93396 ],
+							"curve": [ 0.368, 0.46, 0.731, 0.91 ]
+						},
+						{
+							"time": 1.4,
+							"vertices": [ 6.51896, -14.346, -2.36905, -1.22903, -14.181, 2.32901, -8.24301, -10.82197 ],
+							"curve": [ 0.248, 0, 0.627, 0.51 ]
+						},
+						{
+							"time": 1.5333,
+							"vertices": [ -5.00785, 7.19079, 8.77625, 7.19079, 8.77625, -6.81562, -5.00785, -6.81562 ]
+						}
+					]
+				},
+				"holeside2": {
+					"holeside2": [
+						{
+							"time": 0,
+							"curve": [ 0.25, 0, 0.75, 1 ]
+						},
+						{
+							"time": 0.5666,
+							"vertices": [ 5.6221, 14.0171, 24.57033, 14.0171, 24.57033, -2.34728, 5.6221, -2.34728 ],
+							"curve": [ 0.25, 0, 0.75, 1 ]
+						},
+						{
+							"time": 0.7,
+							"vertices": [ 1.35304, 9.93909, -11.27699, 1.96109, 17.76902, 4.67105, 13.26602, 15.16906 ],
+							"curve": [ 0.248, 0, 0.627, 0.51 ]
+						},
+						{
+							"time": 1.0666,
+							"vertices": [ 1.08799, 12.05811, -5.29997, 2.34609, 12.09599, 5.17807, -6.25597, 2.34609 ],
+							"curve": [ 0.377, 0.51, 0.748, 1 ]
+						},
+						{
+							"time": 1.4,
+							"vertices": [ -4.69492, 12.59508, -11.27699, 1.96109, 17.76902, 4.67105, 13.26602, 15.16906 ],
+							"curve": [ 0.248, 0, 0.627, 0.51 ]
+						},
+						{
+							"time": 1.5333,
+							"vertices": [ 5.6221, 14.0171, 24.57033, 14.0171, 24.57033, -2.34728, 5.6221, -2.34728 ]
+						}
+					]
+				}
+			}
+		},
+		"drawOrder": [
+			{ "time": 0 },
+			{ "time": 1.5333 }
+		]
+	},
+	"2": {
+		"slots": {
+			"holeside1": {
+				"color": [
+					{ "time": 0, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.5333, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 1.5333, "name": null }
+				]
+			},
+			"holeside2": {
+				"color": [
+					{ "time": 0, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.5333, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 0.6333, "name": "holeside2" },
+					{ "time": 1.5333, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"holeside2": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.6333, "angle": -105.53, "curve": "stepped" },
+					{ "time": 1.5333, "angle": -105.53 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 0.6333, "x": 36.57, "y": 71.61 },
+					{ "time": 0.7, "x": 47.84, "y": 59.65, "curve": "stepped" },
+					{ "time": 1.5333, "x": 47.84, "y": 59.65 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 1.5333, "x": 1, "y": 1 }
+				]
+			},
+			"holeside1": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1.5333, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.5333, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 1.5333, "x": 1, "y": 1 }
+				]
+			},
+			"root": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1.5333, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.5333, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 1.5333, "x": 1, "y": 1 }
+				]
+			}
+		},
+		"deform": {
+			"default": {
+				"holeside2": {
+					"holeside2": [
+						{
+							"time": 0,
+							"curve": [ 0.25, 0, 0.75, 1 ]
+						},
+						{
+							"time": 0.6333,
+							"vertices": [ 5.6221, 14.0171, 24.57033, 14.0171, 24.57033, -2.34728, 5.6221, -2.34728 ],
+							"curve": [ 0.25, 0, 0.75, 1 ]
+						},
+						{
+							"time": 0.7,
+							"vertices": [ 1.35304, 9.93909, -11.27699, 1.96109, 17.76902, 4.67105, 13.26602, 15.16906 ],
+							"curve": [ 0.248, 0, 0.627, 0.51 ]
+						},
+						{
+							"time": 1.0666,
+							"vertices": [ 5.21601, 9.99408, -5.29997, 2.34609, 5.21601, 9.99408, -6.25597, 2.34609 ],
+							"curve": [ 0.377, 0.51, 0.748, 1 ]
+						},
+						{
+							"time": 1.4,
+							"vertices": [ -8.82293, 16.72306, -11.27699, 1.96109, 17.76902, 4.67105, 13.26602, 15.16906 ],
+							"curve": [ 0.248, 0, 0.627, 0.51 ]
+						},
+						{
+							"time": 1.5333,
+							"vertices": [ 5.6221, 14.0171, 24.57033, 14.0171, 24.57033, -2.34728, 5.6221, -2.34728 ]
+						}
+					]
+				}
+			}
+		},
+		"drawOrder": [
+			{ "time": 0 },
+			{ "time": 1.5333 }
+		]
+	},
+	"3": {
+		"slots": {
+			"holeside1": {
+				"color": [
+					{ "time": 0, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.5333, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 0.5666, "name": "holeside1" },
+					{ "time": 1.5333, "name": null }
+				]
+			},
+			"holeside2": {
+				"color": [
+					{ "time": 0, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.5333, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 1.5333, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"holeside1": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1.5333, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": -46.74, "y": 25, "curve": "stepped" },
+					{ "time": 1.5333, "x": -46.74, "y": 25 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 1.5333, "x": 1, "y": 1 }
+				]
+			},
+			"holeside2": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1.5333, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.5333, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 1.5333, "x": 1, "y": 1 }
+				]
+			},
+			"root": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1.5333, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.5333, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 1.5333, "x": 1, "y": 1 }
+				]
+			}
+		},
+		"deform": {
+			"default": {
+				"holeside1": {
+					"holeside1": [
+						{
+							"time": 0,
+							"curve": [ 0.25, 0, 0.75, 1 ]
+						},
+						{
+							"time": 0.5666,
+							"vertices": [ -5.00785, 7.19079, 8.77625, 7.19079, 8.77625, -6.81562, -5.00785, -6.81562 ],
+							"curve": [ 0.25, 0, 0.75, 1 ]
+						},
+						{
+							"time": 0.7,
+							"vertices": [ -8.46, -4.347, -16.82095, 1.89196, -24.91997, 4.69602, -20.67797, -6.75898 ],
+							"curve": [ 0.248, 0, 0.627, 0.51 ]
+						},
+						{
+							"time": 1.0666,
+							"vertices": [ -1.40101, -4.81798, -16.22701, -2.914, -16.42502, -1.49402, -15.26299, -2.90597 ],
+							"curve": [ 0.368, 0.46, 0.731, 0.91 ]
+						},
+						{
+							"time": 1.4,
+							"vertices": [ 2.29497, -12.23397, 4.451, -0.12102, -18.40499, 4.44104, -12.467, -8.70994 ],
+							"curve": [ 0.248, 0, 0.627, 0.51 ]
+						},
+						{
+							"time": 1.5333,
+							"vertices": [ -5.00785, 7.19079, 8.77625, 7.19079, 8.77625, -6.81562, -5.00785, -6.81562 ]
+						}
+					]
+				}
+			}
+		},
+		"drawOrder": [
+			{ "time": 0 },
+			{ "time": 1.5333 }
+		]
+	},
+	"stop1": {
+		"slots": {
+			"holeside1": {
+				"color": [
+					{ "time": 0, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.5333, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 0.5666, "name": "holeside1" },
+					{ "time": 1.5333, "name": "holeside1" }
+				]
+			},
+			"holeside2": {
+				"color": [
+					{ "time": 0, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.5333, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 0.5666, "name": "holeside2" },
+					{ "time": 1.5333, "name": "holeside2" }
+				]
+			}
+		},
+		"bones": {
+			"holeside2": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1.5333, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.5333, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 1.5333, "x": 1, "y": 1 }
+				]
+			},
+			"holeside1": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1.5333, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.5333, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 1.5333, "x": 1, "y": 1 }
+				]
+			},
+			"root": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1.5333, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.5333, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 1.5333, "x": 1, "y": 1 }
+				]
+			}
+		},
+		"deform": {
+			"default": {
+				"holeside1": {
+					"holeside1": [
+						{
+							"time": 0,
+							"curve": [ 0.25, 0, 0.75, 1 ]
+						},
+						{
+							"time": 0.5666,
+							"vertices": [ -5.00785, 7.19079, 8.77625, 7.19079, 8.77625, -6.81562, -5.00785, -6.81562 ],
+							"curve": "stepped"
+						},
+						{
+							"time": 1.5333,
+							"vertices": [ -5.00785, 7.19079, 8.77625, 7.19079, 8.77625, -6.81562, -5.00785, -6.81562 ]
+						}
+					]
+				},
+				"holeside2": {
+					"holeside2": [
+						{
+							"time": 0,
+							"curve": [ 0.25, 0, 0.75, 1 ]
+						},
+						{
+							"time": 0.5666,
+							"vertices": [ 5.6221, 14.0171, 24.57033, 14.0171, 24.57033, -2.34728, 5.6221, -2.34728 ],
+							"curve": "stepped"
+						},
+						{
+							"time": 1.5333,
+							"vertices": [ 5.6221, 14.0171, 24.57033, 14.0171, 24.57033, -2.34728, 5.6221, -2.34728 ]
+						}
+					]
+				}
+			}
+		},
+		"drawOrder": [
+			{ "time": 0 },
+			{ "time": 1.5333 }
+		]
+	},
+	"stop2": {
+		"slots": {
+			"holeside1": {
+				"color": [
+					{ "time": 0, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.5333, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 1.5333, "name": null }
+				]
+			},
+			"holeside2": {
+				"color": [
+					{ "time": 0, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.5333, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 0.6333, "name": "holeside2" },
+					{ "time": 1.5333, "name": "holeside2" }
+				]
+			}
+		},
+		"bones": {
+			"holeside2": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.6333, "angle": -105.53, "curve": "stepped" },
+					{ "time": 1.5333, "angle": -105.53 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 0.6333, "x": 36.57, "y": 71.61, "curve": "stepped" },
+					{ "time": 1.5333, "x": 36.57, "y": 71.61 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 1.5333, "x": 1, "y": 1 }
+				]
+			},
+			"holeside1": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1.5333, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.5333, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 1.5333, "x": 1, "y": 1 }
+				]
+			},
+			"root": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1.5333, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.5333, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 1.5333, "x": 1, "y": 1 }
+				]
+			}
+		},
+		"deform": {
+			"default": {
+				"holeside2": {
+					"holeside2": [
+						{
+							"time": 0,
+							"curve": [ 0.25, 0, 0.75, 1 ]
+						},
+						{
+							"time": 0.6333,
+							"vertices": [ 5.6221, 14.0171, 24.57033, 14.0171, 24.57033, -2.34728, 5.6221, -2.34728 ],
+							"curve": "stepped"
+						},
+						{
+							"time": 1.5333,
+							"vertices": [ 5.6221, 14.0171, 24.57033, 14.0171, 24.57033, -2.34728, 5.6221, -2.34728 ]
+						}
+					]
+				}
+			}
+		},
+		"drawOrder": [
+			{ "time": 0 },
+			{ "time": 1.5333 }
+		]
+	},
+	"stop3": {
+		"slots": {
+			"holeside1": {
+				"color": [
+					{ "time": 0, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.5666, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 0.5666, "name": "holeside1" }
+				]
+			},
+			"holeside2": {
+				"color": [
+					{ "time": 0, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.5666, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 0.5666, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"holeside1": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 0.5666, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": -46.74, "y": 25, "curve": "stepped" },
+					{ "time": 0.5666, "x": -46.74, "y": 25 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 0.5666, "x": 1, "y": 1 }
+				]
+			},
+			"holeside2": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 0.5666, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.5666, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 0.5666, "x": 1, "y": 1 }
+				]
+			},
+			"root": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 0.5666, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.5666, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 0.5666, "x": 1, "y": 1 }
+				]
+			}
+		},
+		"deform": {
+			"default": {
+				"holeside1": {
+					"holeside1": [
+						{
+							"time": 0,
+							"curve": [ 0.25, 0, 0.75, 1 ]
+						},
+						{
+							"time": 0.5666,
+							"vertices": [ -5.00785, 7.19079, 8.77625, 7.19079, 8.77625, -6.81562, -5.00785, -6.81562 ]
+						}
+					]
+				}
+			}
+		},
+		"drawOrder": [
+			{ "time": 0 },
+			{ "time": 0.5666 }
+		]
+	}
+}
+}

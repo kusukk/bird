@@ -1,0 +1,502 @@
+{
+"skeleton": { "hash": "JGJP0a/2fccO9toG2/NT+edSn9w", "spine": "3.4.02", "width": 553.59, "height": 1103.04, "images": "./picture/" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "PIG", "parent": "root", "x": 241, "y": 258 },
+	{ "name": "STAR1", "parent": "root" },
+	{ "name": "UFO", "parent": "STAR1", "rotation": 66.41, "x": 159.31, "y": 384.82 },
+	{ "name": "hole1", "parent": "STAR1", "x": 145.43, "y": 297.51 },
+	{ "name": "hole2", "parent": "STAR1", "rotation": 29.32, "x": 157.43, "y": -41.66 },
+	{ "name": "hole3", "parent": "STAR1", "x": 89.59, "y": -347.58 },
+	{ "name": "slingshot", "parent": "STAR1", "length": 38.24, "rotation": 93.6, "x": 74.29, "y": 145.54 },
+	{ "name": "star1/land", "parent": "UFO", "length": 32.32, "rotation": 178.64, "x": 12.82, "y": -0.08 },
+	{ "name": "ufo", "parent": "UFO", "length": 51.63, "x": 4.35, "y": 0.21 }
+],
+"slots": [
+	{ "name": "star", "bone": "STAR1", "attachment": "star" },
+	{ "name": "land", "bone": "star1/land", "attachment": "land" },
+	{ "name": "UFO", "bone": "ufo", "attachment": "UFO" },
+	{ "name": "hole3", "bone": "hole3", "attachment": "hole3" },
+	{ "name": "hole2", "bone": "hole2", "attachment": "hole2" },
+	{ "name": "hole1", "bone": "hole1", "attachment": "hole1" },
+	{ "name": "slingshot", "bone": "slingshot", "attachment": "slingshot" }
+],
+"skins": {
+	"default": {
+		"UFO": {
+			"UFO": { "x": 29.18, "y": 11.63, "scaleX": 0.95, "scaleY": 0.984, "rotation": -66.41, "width": 357, "height": 319 }
+		},
+		"hole1": {
+			"hole1": { "x": -15.94, "y": -388.39, "scaleX": 0.953, "scaleY": 0.986, "width": 292, "height": 300 }
+		},
+		"hole2": {
+			"hole2": { "x": -213.03, "y": -245.56, "scaleX": 0.973, "scaleY": 0.973, "rotation": -29.32, "width": 255, "height": 267 }
+		},
+		"hole3": {
+			"hole3": {
+				"type": "mesh",
+				"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0 ],
+				"triangles": [ 1, 2, 3, 1, 3, 0 ],
+				"vertices": [ 268.99, -53.11, 125.13, -53.11, 125.13, 110.13, 268.99, 110.13 ],
+				"hull": 4,
+				"edges": [ 0, 2, 2, 4, 4, 6, 0, 6 ],
+				"width": 178,
+				"height": 202
+			}
+		},
+		"land": {
+			"land": { "x": 4.1, "y": -13.04, "rotation": 114.93, "width": 208, "height": 131 }
+		},
+		"slingshot": {
+			"slingshot": { "x": 27.18, "y": 49.39, "scaleX": 0.956, "scaleY": 0.993, "rotation": -93.6, "width": 186, "height": 262 }
+		},
+		"star": {
+			"star": {
+				"type": "mesh",
+				"uvs": [ 0.75171, 0.1133, 0.96542, 0.36312, 1, 0.5131, 0.99999, 0.68327, 0.84145, 0.89439, 0.44577, 1, 0, 1, 0, 0, 0.3376, 0, 0.25821, 0.11964, 0.54837, 0.23947, 0.72592, 0.40385, 0.71639, 0.64477, 0.23704, 0.89746, 0.57326, 0.77207, 0.18527, 0.32143, 0.2939, 0.56389 ],
+				"triangles": [ 9, 7, 8, 10, 8, 0, 9, 8, 10, 15, 7, 9, 15, 9, 10, 11, 10, 0, 11, 0, 1, 16, 15, 10, 16, 10, 11, 12, 16, 11, 2, 11, 1, 2, 12, 11, 3, 12, 2, 14, 16, 12, 4, 12, 3, 14, 12, 4, 16, 6, 15, 13, 16, 14, 6, 7, 15, 13, 6, 16, 5, 13, 14, 6, 13, 5, 5, 14, 4 ],
+				"vertices": [ 363.6, 345.3, 470.45, 99.35, 487.38, -46.94, 487.96, -213.73, 407.9, -417.31, 216.86, -519.94, -7.9, -525.76, -7.41, 456.29, 213.22, 446.88, 120.91, 338.37, 262.9, 220.82, 352.43, 60.09, 346.71, -177.64, 100.22, -434.48, 273.89, -307.68, 84.95, 140.47, 136.79, -95.74 ],
+				"hull": 9,
+				"edges": [ 10, 12, 10, 8, 8, 6, 6, 4, 4, 2, 14, 16, 0, 16, 18, 20, 20, 22, 22, 24, 24, 28, 28, 26, 0, 2, 30, 32, 32, 24, 30, 20, 12, 14 ],
+				"width": 541,
+				"height": 1038
+			}
+		}
+	}
+},
+"animations": {
+	"run": {
+		"slots": {
+			"UFO": {
+				"color": [
+					{ "time": 0, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 9, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "time": 0, "name": "UFO" },
+					{ "time": 3.0666, "name": "UFO" },
+					{ "time": 6.0666, "name": "UFO" },
+					{ "time": 9, "name": "UFO" }
+				]
+			},
+			"hole1": {
+				"color": [
+					{ "time": 0, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 9, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "time": 0, "name": "hole1" },
+					{ "time": 9, "name": "hole1" }
+				]
+			},
+			"hole2": {
+				"color": [
+					{ "time": 0, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 9, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "time": 0, "name": "hole2" },
+					{ "time": 9, "name": "hole2" }
+				]
+			},
+			"hole3": {
+				"color": [
+					{ "time": 0, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 9, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "time": 0, "name": "hole3" },
+					{ "time": 9, "name": "hole3" }
+				]
+			},
+			"land": {
+				"color": [
+					{ "time": 0, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 9, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "time": 0, "name": "land" },
+					{ "time": 9, "name": "land" }
+				]
+			},
+			"slingshot": {
+				"color": [
+					{ "time": 0, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 9, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "time": 0, "name": "slingshot" },
+					{ "time": 9, "name": "slingshot" }
+				]
+			},
+			"star": {
+				"color": [
+					{ "time": 0, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 9, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "time": 0, "name": "star" },
+					{ "time": 3.0666, "name": "star" },
+					{ "time": 6.0666, "name": "star" },
+					{ "time": 9, "name": "star" }
+				]
+			}
+		},
+		"bones": {
+			"STAR1": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 9, "angle": 0 }
+				],
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0, 0, 0.75, 1 ]
+					},
+					{
+						"time": 2,
+						"x": 0,
+						"y": -6.1,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 6.6666,
+						"x": 0,
+						"y": 12.2,
+						"curve": [ 0.25, 0, 1, 1 ]
+					},
+					{ "time": 9, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 9, "x": 1, "y": 1 }
+				]
+			},
+			"hole2": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 9, "angle": 0 }
+				],
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 4.5,
+						"x": 27.9,
+						"y": 1.55,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 9, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{
+						"time": 0,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 4.5,
+						"x": 1.016,
+						"y": 1,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 9, "x": 1, "y": 1 }
+				]
+			},
+			"hole3": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 9, "angle": 0 }
+				],
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 4.5,
+						"x": 22.17,
+						"y": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 9, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{
+						"time": 0,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 4.5,
+						"x": 1.023,
+						"y": 1,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 9, "x": 1, "y": 1 }
+				]
+			},
+			"hole1": {
+				"rotate": [
+					{
+						"time": 0,
+						"angle": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 4.5,
+						"angle": 1.22,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 9, "angle": 0 }
+				],
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 4.5,
+						"x": 20.91,
+						"y": 1.86,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 9, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{
+						"time": 0,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 4.5,
+						"x": 0.976,
+						"y": 1,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 9, "x": 1, "y": 1 }
+				]
+			},
+			"slingshot": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 9, "angle": 0 }
+				],
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 4.5,
+						"x": 24.34,
+						"y": 2.74,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 9, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{
+						"time": 0,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 4.5,
+						"x": 1,
+						"y": 1.026,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 9, "x": 1, "y": 1 }
+				]
+			},
+			"ufo": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 9, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 9, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{
+						"time": 0,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 4.5,
+						"x": 0.99,
+						"y": 0.99,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 9, "x": 1, "y": 1 }
+				]
+			},
+			"UFO": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 9, "angle": 0 }
+				],
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 4.5,
+						"x": 15.61,
+						"y": 1.24,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 9, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 9, "x": 1, "y": 1 }
+				]
+			},
+			"star1/land": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 9, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 9, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{
+						"time": 0,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 4.5,
+						"x": 0.959,
+						"y": 1,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 9, "x": 1, "y": 1 }
+				]
+			},
+			"root": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 9, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 9, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 9, "x": 1, "y": 1 }
+				]
+			},
+			"STAR1": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0, 0, 0.75, 1 ]
+					},
+					{
+						"time": 2,
+						"x": 0,
+						"y": -6.1,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 6.6666,
+						"x": 0,
+						"y": 12.2,
+						"curve": [ 0.25, 0, 1, 1 ]
+					},
+					{ "time": 9, "x": 0, "y": 0 }
+				]
+			},
+			"PIG": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 9, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 0.5, "x": 0.79, "y": -1.55 },
+					{ "time": 1, "x": 3.3, "y": -3.11 },
+					{ "time": 2, "x": 9, "y": -5.3 },
+					{ "time": 3.3, "x": 16.67, "y": -0.76 },
+					{ "time": 4.0666, "x": 20.15, "y": 2.8 },
+					{ "time": 4.5666, "x": 20.54, "y": 5.31 },
+					{ "time": 5.0666, "x": 19.11, "y": 7.89 },
+					{ "time": 5.5666, "x": 17.12, "y": 10.19 },
+					{ "time": 6.6666, "x": 10.89, "y": 13.31 },
+					{ "time": 7.5666, "x": 5.79, "y": 9.09 },
+					{ "time": 8.0666, "x": 2.95, "y": 6.03 },
+					{ "time": 9, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 9, "x": 1, "y": 1 }
+				]
+			}
+		},
+		"deform": {
+			"default": {
+				"hole3": {
+					"hole3": [
+						{ "time": 0 },
+						{
+							"time": 4.5,
+							"vertices": [ -21.82379, 18.84787 ]
+						},
+						{ "time": 9 }
+					]
+				},
+				"star": {
+					"star": [
+						{
+							"time": 0,
+							"curve": [ 0.25, 0, 0.75, 1 ]
+						},
+						{
+							"time": 4.5,
+							"vertices": [ -0.26655, -11.36324, -17.33182, -0.96736, -4.16732, 0, -5.7255, 6.51449, -7.45311, 6.51449, -0.93867, 3.72201, -0.93867, 0, -0.93867, 0, -0.93867, -12.38761, 37.72801, -3.08199, 21.96408, 2.62711, 19.3367, 2.85621, 26.57323, 4.18733, 18.18759, -6.20358, 14.25102, -8.67537, 25.58387, -0.5358, 31.97817, 1.69805 ],
+							"curve": [ 0.25, 0, 0.75, 1 ]
+						},
+						{ "time": 9 }
+					]
+				}
+			}
+		},
+		"drawOrder": [
+			{ "time": 0 },
+			{ "time": 9 }
+		]
+	}
+}
+}

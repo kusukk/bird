@@ -1,0 +1,44 @@
+{
+"skeleton": { "hash": "RKJ7PkFxitqjvh/az3sJVXrsi64", "spine": "3.4.02", "width": 157.09, "height": 163, "images": "./picture/" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "champagne", "parent": "root", "rotation": 310.17, "scaleX": 1.2, "scaleY": 1.2, "color": "ff7773ff" }
+],
+"slots": [
+	{ "name": "champagne/all", "bone": "champagne", "attachment": "champagne/all" }
+],
+"skins": {
+	"default": {
+		"champagne/all": {
+			"champagne/all": { "x": 4.68, "rotation": -88.8, "width": 67, "height": 122 }
+		}
+	}
+},
+"animations": {
+	"run": {
+		"slots": {
+			"champagne/all": {
+				"attachment": [
+					{ "time": 0, "name": "champagne/all" }
+				]
+			}
+		},
+		"bones": {
+			"champagne": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.3333, "angle": -90.17 },
+					{ "time": 0.6666, "angle": -180.17 },
+					{ "time": 1.3333, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 }
+				]
+			}
+		}
+	}
+}
+}

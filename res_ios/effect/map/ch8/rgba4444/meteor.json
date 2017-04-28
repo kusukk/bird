@@ -1,0 +1,1490 @@
+{
+"skeleton": { "hash": "7iz/D1eC1XtMcYKj/zvU0FTKLaQ", "spine": "3.4.02", "width": 0, "height": 0, "images": "./picture/" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "root2", "parent": "root" },
+	{ "name": "Meteor1", "parent": "root2", "rotation": 89.13 },
+	{ "name": "Meteor2", "parent": "root2", "rotation": 89.13 },
+	{ "name": "Meteor3", "parent": "root2", "rotation": 89.13 },
+	{ "name": "meteor1", "parent": "Meteor1", "rotation": -35.74, "x": 9.15, "y": -15.98 },
+	{ "name": "meteor2", "parent": "Meteor2", "rotation": -35.74, "x": 9.15, "y": -15.98 },
+	{ "name": "meteor3", "parent": "Meteor3", "rotation": -35.74, "x": 9.15, "y": -15.98 },
+	{ "name": "meteor/4star1", "parent": "meteor1", "rotation": -94.63, "x": 0.12, "y": 19.34 },
+	{ "name": "meteor/4star2", "parent": "meteor2", "rotation": -94.63, "x": 0.12, "y": 19.34 },
+	{ "name": "meteor/4star3", "parent": "meteor3", "rotation": -94.63, "x": 0.12, "y": 19.34 },
+	{ "name": "meteor/5star1", "parent": "meteor1", "x": 0.73, "y": 20.02 },
+	{ "name": "meteor/5star2", "parent": "meteor2", "x": 0.73, "y": 20.02 },
+	{ "name": "meteor/5star3", "parent": "meteor3", "x": 0.73, "y": 20.02 },
+	{ "name": "meteor/tail1", "parent": "meteor1", "length": 51.94, "rotation": 82.33, "x": -1.73, "y": 14.08 },
+	{ "name": "meteor/tail2", "parent": "meteor2", "length": 51.94, "rotation": 82.33, "x": -1.73, "y": 14.08 },
+	{ "name": "meteor/tail3", "parent": "meteor3", "length": 51.94, "rotation": 82.33, "x": -1.73, "y": 14.08 }
+],
+"slots": [
+	{ "name": "meteor/tail1", "bone": "meteor/tail1", "attachment": "meteor/tail" },
+	{ "name": "meteor/tail2", "bone": "meteor/tail2", "attachment": "meteor/tail" },
+	{ "name": "meteor/tail3", "bone": "meteor/tail3", "attachment": "meteor/tail" },
+	{ "name": "meteor/4star1", "bone": "meteor/4star1", "attachment": "meteor/star2" },
+	{ "name": "meteor/4star2", "bone": "meteor/4star2", "attachment": "meteor/star2" },
+	{ "name": "meteor/4star3", "bone": "meteor/4star3", "attachment": "meteor/star2" },
+	{ "name": "meteor/5star1", "bone": "meteor/5star1", "attachment": "meteor/star" },
+	{ "name": "meteor/5star2", "bone": "meteor/5star2", "attachment": "meteor/star" },
+	{ "name": "meteor/5star3", "bone": "meteor/5star3", "attachment": "meteor/star" },
+	{ "name": "meteor/halo", "bone": "meteor/5star1", "color": "ffffffc4", "attachment": "meteor/halo" },
+	{ "name": "meteor/halo2", "bone": "meteor/5star2", "color": "ffffffc4", "attachment": "meteor/halo" },
+	{ "name": "meteor/halo3", "bone": "meteor/5star3", "color": "ffffffc4", "attachment": "meteor/halo" },
+	{ "name": "meteor/points1", "bone": "meteor/tail1", "attachment": "meteor/points/03" },
+	{ "name": "meteor/points2", "bone": "meteor/tail2", "attachment": "meteor/points/03" },
+	{ "name": "meteor/points3", "bone": "meteor/tail3", "attachment": "meteor/points/03" }
+],
+"skins": {
+	"default": {
+		"meteor/4star1": {
+			"meteor/star2": { "x": 0.64, "y": 0.62, "width": 36, "height": 41 }
+		},
+		"meteor/4star2": {
+			"meteor/star2": { "x": 0.64, "y": 0.62, "width": 36, "height": 41 }
+		},
+		"meteor/4star3": {
+			"meteor/star2": { "x": 0.64, "y": 0.62, "width": 36, "height": 41 }
+		},
+		"meteor/5star1": {
+			"meteor/star": { "x": 0.71, "y": 1.66, "width": 31, "height": 30 }
+		},
+		"meteor/5star2": {
+			"meteor/star": { "x": 0.71, "y": 1.66, "width": 31, "height": 30 }
+		},
+		"meteor/5star3": {
+			"meteor/star": { "x": 0.71, "y": 1.66, "width": 31, "height": 30 }
+		},
+		"meteor/halo": {
+			"meteor/halo": { "x": 1.61, "y": -1.51, "scaleX": 0.697, "scaleY": 0.697, "rotation": -94.63, "width": 57, "height": 57 }
+		},
+		"meteor/halo2": {
+			"meteor/halo": { "x": 1.61, "y": -1.51, "scaleX": 0.697, "scaleY": 0.697, "rotation": -94.63, "width": 57, "height": 57 }
+		},
+		"meteor/halo3": {
+			"meteor/halo": { "x": 1.61, "y": -1.51, "scaleX": 0.697, "scaleY": 0.697, "rotation": -94.63, "width": 57, "height": 57 }
+		},
+		"meteor/points1": {
+			"meteor/points/01": { "x": 62.27, "y": 5.64, "rotation": -82.33, "width": 51, "height": 55 },
+			"meteor/points/02": { "x": 57.48, "y": 8.61, "rotation": -82.33, "width": 62, "height": 83 },
+			"meteor/points/03": { "x": 52.4, "y": 5.97, "rotation": -82.33, "width": 60, "height": 47 }
+		},
+		"meteor/points2": {
+			"meteor/points/01": { "x": 62.27, "y": 5.64, "rotation": -82.33, "width": 51, "height": 55 },
+			"meteor/points/02": { "x": 57.48, "y": 8.61, "rotation": -82.33, "width": 62, "height": 83 },
+			"meteor/points/03": { "x": 52.4, "y": 5.97, "rotation": -82.33, "width": 60, "height": 47 }
+		},
+		"meteor/points3": {
+			"meteor/points/01": { "x": 62.27, "y": 5.64, "rotation": -82.33, "width": 51, "height": 55 },
+			"meteor/points/02": { "x": 57.48, "y": 8.61, "rotation": -82.33, "width": 62, "height": 83 },
+			"meteor/points/03": { "x": 52.4, "y": 5.97, "rotation": -82.33, "width": 60, "height": 47 }
+		},
+		"meteor/tail1": {
+			"meteor/tail": { "x": 172.23, "y": 13.93, "rotation": -82.33, "width": 29, "height": 353 }
+		},
+		"meteor/tail2": {
+			"meteor/tail": { "x": 172.23, "y": 13.93, "rotation": -82.33, "width": 29, "height": 353 }
+		},
+		"meteor/tail3": {
+			"meteor/tail": { "x": 172.23, "y": 13.93, "rotation": -82.33, "width": 29, "height": 353 }
+		}
+	}
+},
+"animations": {
+	"run1": {
+		"slots": {
+			"meteor/4star1": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 1.6666, "name": "meteor/star2" },
+					{ "time": 2.1666, "name": null }
+				]
+			},
+			"meteor/4star2": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"meteor/4star3": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"meteor/5star1": {
+				"attachment": [
+					{ "time": 0, "name": "meteor/star" },
+					{ "time": 1.6666, "name": null }
+				]
+			},
+			"meteor/5star2": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"meteor/5star3": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"meteor/halo": {
+				"attachment": [
+					{ "time": 0, "name": "meteor/halo" },
+					{ "time": 2.3333, "name": null }
+				]
+			},
+			"meteor/halo2": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"meteor/halo3": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"meteor/points1": {
+				"color": [
+					{ "time": 0, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.7, "color": "ffffffff" },
+					{ "time": 1.9, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 0, "name": "meteor/points/01" },
+					{ "time": 0.1, "name": "meteor/points/02" },
+					{ "time": 0.2, "name": "meteor/points/03" },
+					{ "time": 0.3, "name": "meteor/points/01" },
+					{ "time": 0.4, "name": "meteor/points/02" },
+					{ "time": 0.5, "name": "meteor/points/03" },
+					{ "time": 0.6, "name": "meteor/points/01" },
+					{ "time": 0.7, "name": "meteor/points/02" },
+					{ "time": 0.8, "name": "meteor/points/03" },
+					{ "time": 0.9, "name": "meteor/points/01" },
+					{ "time": 1, "name": "meteor/points/02" },
+					{ "time": 1.1, "name": "meteor/points/03" },
+					{ "time": 1.2, "name": "meteor/points/01" },
+					{ "time": 1.3, "name": "meteor/points/02" },
+					{ "time": 1.4, "name": "meteor/points/03" },
+					{ "time": 1.5, "name": "meteor/points/01" },
+					{ "time": 1.6, "name": "meteor/points/02" },
+					{ "time": 1.7, "name": "meteor/points/03" },
+					{ "time": 1.8, "name": "meteor/points/01" },
+					{ "time": 1.9, "name": null }
+				]
+			},
+			"meteor/points2": {
+				"color": [
+					{ "time": 0, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"meteor/points3": {
+				"color": [
+					{ "time": 0, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"meteor/tail1": {
+				"color": [
+					{ "time": 0, "color": "ffffffff", "curve": "stepped" },
+					{
+						"time": 1.6,
+						"color": "ffffffff",
+						"curve": [ 0.25, 0, 0.99, 1 ]
+					},
+					{ "time": 1.7666, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 0, "name": "meteor/tail" },
+					{ "time": 1.9, "name": null }
+				]
+			},
+			"meteor/tail2": {
+				"color": [
+					{ "time": 0, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"meteor/tail3": {
+				"color": [
+					{ "time": 0, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"meteor/4star1": {
+				"rotate": [
+					{ "time": 0, "angle": 43.58 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0.69, "y": 0.69, "curve": "stepped" },
+					{
+						"time": 1.6666,
+						"x": 0.69,
+						"y": 0.69,
+						"curve": [ 0, 0, 0.484, 1 ]
+					},
+					{
+						"time": 1.8666,
+						"x": 1.37,
+						"y": 1.37,
+						"curve": [ 0.454, 0, 1, 1 ]
+					},
+					{ "time": 2.1666, "x": 0.372, "y": 0.372 }
+				]
+			},
+			"meteor1": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.091, 0.38, 0.581, 1 ]
+					},
+					{
+						"time": 0.6666,
+						"x": 66.1,
+						"y": -23.05,
+						"curve": [ 0.385, 0.14, 0.791, 0.72 ]
+					},
+					{ "time": 1.6666, "x": -8.14, "y": 15.83 }
+				],
+				"scale": [
+					{
+						"time": 0,
+						"x": 1.327,
+						"y": 1.327,
+						"curve": [ 0.132, 0.47, 0.762, 1 ]
+					},
+					{ "time": 1.6666, "x": 1.786, "y": 1.786 }
+				]
+			},
+			"Meteor1": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 7.54,
+						"y": 30.57,
+						"curve": [ 0.177, 0.56, 0.766, 0.96 ]
+					},
+					{ "time": 1.6666, "x": 799.53, "y": -249.39 }
+				]
+			},
+			"meteor/tail1": {
+				"rotate": [
+					{
+						"time": 0,
+						"angle": 35.81,
+						"curve": [ 0, 0, 0.288, 1 ]
+					},
+					{
+						"time": 0.6666,
+						"angle": 28.76,
+						"curve": [ 0.405, 0.14, 1, 1 ]
+					},
+					{ "time": 1.6666, "angle": 4.81 }
+				],
+				"scale": [
+					{
+						"time": 0,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0.497, 0, 0.807, 0.44 ]
+					},
+					{
+						"time": 0.6666,
+						"x": 1.31,
+						"y": 1,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.7666, "x": 0.451, "y": 1 }
+				],
+				"shear": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 0,
+						"curve": [ 1, 0, 1, 1 ]
+					},
+					{ "time": 1.7666, "x": -7.18, "y": -49.33 }
+				]
+			},
+			"meteor/5star1": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.8333, "angle": -178.08 },
+					{ "time": 1.6666, "angle": 6.06 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 0.8333, "x": 1, "y": 1 },
+					{
+						"time": 1.6666,
+						"x": 0.769,
+						"y": 0.769,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.8666,
+						"x": 1.528,
+						"y": 1.528,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 2.3333, "x": 0.372, "y": 0.372 }
+				]
+			},
+			"Meteor2": {
+				"translate": [
+					{ "time": 0, "x": 6.36, "y": -35.8 }
+				]
+			},
+			"meteor2": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1.645, "y": 1.645 }
+				]
+			},
+			"meteor/4star2": {
+				"rotate": [
+					{ "time": 0, "angle": 43.58 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0.69, "y": 0.69 }
+				]
+			},
+			"meteor/5star2": {
+				"rotate": [
+					{ "time": 0, "angle": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 }
+				]
+			},
+			"meteor/tail2": {
+				"rotate": [
+					{ "time": 0, "angle": 23.54 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 }
+				],
+				"shear": [
+					{ "time": 0, "x": 0, "y": 0 }
+				]
+			},
+			"Meteor3": {
+				"translate": [
+					{ "time": 0, "x": 15.92, "y": 18.53 }
+				]
+			},
+			"meteor3": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 2.056, "y": 2.056 }
+				]
+			},
+			"meteor/4star3": {
+				"rotate": [
+					{ "time": 0, "angle": 43.58 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0.69, "y": 0.69 }
+				]
+			},
+			"meteor/5star3": {
+				"rotate": [
+					{ "time": 0, "angle": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 }
+				]
+			},
+			"meteor/tail3": {
+				"rotate": [
+					{ "time": 0, "angle": 36.75 }
+				],
+				"translate": [
+					{ "time": 0, "x": -0.53, "y": 0.72 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 }
+				],
+				"shear": [
+					{ "time": 0, "x": 0, "y": 0 }
+				]
+			}
+		}
+	},
+	"run2": {
+		"slots": {
+			"meteor/4star1": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 1.6666, "name": "meteor/star2" },
+					{ "time": 2.1666, "name": null }
+				]
+			},
+			"meteor/4star2": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 2.1666, "name": "meteor/star2" },
+					{ "time": 2.6666, "name": null }
+				]
+			},
+			"meteor/4star3": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"meteor/5star1": {
+				"attachment": [
+					{ "time": 0, "name": "meteor/star" },
+					{ "time": 1.6666, "name": null }
+				]
+			},
+			"meteor/5star2": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 0.5, "name": "meteor/star" },
+					{ "time": 2.1666, "name": null }
+				]
+			},
+			"meteor/5star3": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"meteor/halo": {
+				"attachment": [
+					{ "time": 0, "name": "meteor/halo" },
+					{ "time": 2.3333, "name": null }
+				]
+			},
+			"meteor/halo2": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 0.5, "name": "meteor/halo" },
+					{ "time": 2.8333, "name": null }
+				]
+			},
+			"meteor/halo3": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"meteor/points1": {
+				"color": [
+					{ "time": 0, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.7, "color": "ffffffff" },
+					{ "time": 1.9, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 0, "name": "meteor/points/01" },
+					{ "time": 0.1, "name": "meteor/points/02" },
+					{ "time": 0.2, "name": "meteor/points/03" },
+					{ "time": 0.3, "name": "meteor/points/01" },
+					{ "time": 0.4, "name": "meteor/points/02" },
+					{ "time": 0.5, "name": "meteor/points/03" },
+					{ "time": 0.6, "name": "meteor/points/01" },
+					{ "time": 0.7, "name": "meteor/points/02" },
+					{ "time": 0.8, "name": "meteor/points/03" },
+					{ "time": 0.9, "name": "meteor/points/01" },
+					{ "time": 1, "name": "meteor/points/02" },
+					{ "time": 1.1, "name": "meteor/points/03" },
+					{ "time": 1.2, "name": "meteor/points/01" },
+					{ "time": 1.3, "name": "meteor/points/02" },
+					{ "time": 1.4, "name": "meteor/points/03" },
+					{ "time": 1.5, "name": "meteor/points/01" },
+					{ "time": 1.6, "name": "meteor/points/02" },
+					{ "time": 1.7, "name": "meteor/points/03" },
+					{ "time": 1.8, "name": "meteor/points/01" },
+					{ "time": 1.9, "name": null }
+				]
+			},
+			"meteor/points2": {
+				"color": [
+					{ "time": 0, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2.2, "color": "ffffffff" },
+					{ "time": 2.4, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 0.5, "name": "meteor/points/01" },
+					{ "time": 0.6, "name": "meteor/points/02" },
+					{ "time": 0.7, "name": "meteor/points/03" },
+					{ "time": 0.8, "name": "meteor/points/01" },
+					{ "time": 0.9, "name": "meteor/points/02" },
+					{ "time": 1, "name": "meteor/points/03" },
+					{ "time": 1.1, "name": "meteor/points/01" },
+					{ "time": 1.2, "name": "meteor/points/02" },
+					{ "time": 1.3, "name": "meteor/points/03" },
+					{ "time": 1.4, "name": "meteor/points/01" },
+					{ "time": 1.5, "name": "meteor/points/02" },
+					{ "time": 1.6, "name": "meteor/points/03" },
+					{ "time": 1.7, "name": "meteor/points/01" },
+					{ "time": 1.8, "name": "meteor/points/02" },
+					{ "time": 1.9, "name": "meteor/points/03" },
+					{ "time": 2, "name": "meteor/points/01" },
+					{ "time": 2.1, "name": "meteor/points/02" },
+					{ "time": 2.2, "name": "meteor/points/03" },
+					{ "time": 2.3, "name": "meteor/points/01" }
+				]
+			},
+			"meteor/points3": {
+				"color": [
+					{ "time": 0, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"meteor/tail1": {
+				"color": [
+					{ "time": 0, "color": "ffffffff", "curve": "stepped" },
+					{
+						"time": 1.6,
+						"color": "ffffffff",
+						"curve": [ 0.25, 0, 0.99, 1 ]
+					},
+					{ "time": 1.7666, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 0, "name": "meteor/tail" },
+					{ "time": 1.9, "name": null }
+				]
+			},
+			"meteor/tail2": {
+				"color": [
+					{ "time": 0, "color": "ffffffff", "curve": "stepped" },
+					{
+						"time": 2.1,
+						"color": "ffffffff",
+						"curve": [ 0.25, 0, 0.99, 1 ]
+					},
+					{ "time": 2.2666, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 0.5, "name": "meteor/tail" }
+				]
+			},
+			"meteor/tail3": {
+				"color": [
+					{ "time": 0, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"meteor/4star1": {
+				"rotate": [
+					{ "time": 0, "angle": 43.58 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0.69, "y": 0.69, "curve": "stepped" },
+					{
+						"time": 1.6666,
+						"x": 0.69,
+						"y": 0.69,
+						"curve": [ 0, 0, 0.484, 1 ]
+					},
+					{
+						"time": 1.8666,
+						"x": 1.37,
+						"y": 1.37,
+						"curve": [ 0.454, 0, 1, 1 ]
+					},
+					{ "time": 2.1666, "x": 0.372, "y": 0.372 }
+				]
+			},
+			"meteor1": {
+				"rotate": [
+					{
+						"time": 0,
+						"angle": 1.16,
+						"curve": [ 0.386, 0, 0.705, 0.42 ]
+					},
+					{
+						"time": 0.6666,
+						"angle": 0.7,
+						"curve": [ 0.339, 0.31, 0.635, 0.76 ]
+					},
+					{ "time": 1.6666, "angle": -20.86 }
+				],
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.091, 0.38, 0.581, 1 ]
+					},
+					{
+						"time": 0.6666,
+						"x": 66.1,
+						"y": -23.05,
+						"curve": [ 0.385, 0.14, 0.791, 0.72 ]
+					},
+					{ "time": 1.6666, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{
+						"time": 0,
+						"x": 1.327,
+						"y": 1.327,
+						"curve": [ 0.132, 0.47, 0.762, 1 ]
+					},
+					{ "time": 1.6666, "x": 0.674, "y": 0.674 }
+				]
+			},
+			"Meteor1": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 3.8,
+						"y": -38.62,
+						"curve": [ 0.177, 0.56, 0.766, 0.96 ]
+					},
+					{ "time": 1.6666, "x": 272.54, "y": -620.17 }
+				]
+			},
+			"meteor/tail1": {
+				"rotate": [
+					{
+						"time": 0,
+						"angle": -3.9,
+						"curve": [ 0, 0, 0.288, 1 ]
+					},
+					{
+						"time": 0.6666,
+						"angle": -17.48,
+						"curve": [ 1, 0, 1, 1 ]
+					},
+					{ "time": 1.6666, "angle": -18.99 }
+				],
+				"scale": [
+					{
+						"time": 0,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0.497, 0, 0.807, 0.44 ]
+					},
+					{
+						"time": 0.6666,
+						"x": 1.31,
+						"y": 1,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.7666, "x": 0.451, "y": 1 }
+				],
+				"shear": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 0,
+						"curve": [ 1, 0, 1, 1 ]
+					},
+					{ "time": 1.7666, "x": -7.18, "y": -49.33 }
+				]
+			},
+			"meteor/5star1": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.8333, "angle": -178.08 },
+					{ "time": 1.6666, "angle": 6.06 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 0.8333, "x": 1, "y": 1 },
+					{
+						"time": 1.6666,
+						"x": 0.769,
+						"y": 0.769,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.8666,
+						"x": 1.528,
+						"y": 1.528,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 2.3333, "x": 0.372, "y": 0.372 }
+				]
+			},
+			"Meteor2": {
+				"translate": [
+					{ "time": 0, "x": 6.36, "y": -35.8, "curve": "stepped" },
+					{
+						"time": 0.5,
+						"x": 6.36,
+						"y": -35.8,
+						"curve": [ 0.177, 0.56, 0.766, 0.96 ]
+					},
+					{ "time": 2.1666, "x": 597.15, "y": -467.79 }
+				]
+			},
+			"meteor2": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{
+						"time": 0.5,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.091, 0.38, 0.581, 1 ]
+					},
+					{
+						"time": 1.1666,
+						"x": 35.84,
+						"y": -32.88,
+						"curve": [ 0.385, 0.14, 0.791, 0.72 ]
+					},
+					{ "time": 2.1666, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1.645, "y": 1.645, "curve": "stepped" },
+					{
+						"time": 0.5,
+						"x": 1.645,
+						"y": 1.645,
+						"curve": [ 0.132, 0.47, 0.762, 1 ]
+					},
+					{ "time": 2.1666, "x": 0.973, "y": 0.973 }
+				]
+			},
+			"meteor/4star2": {
+				"rotate": [
+					{ "time": 0, "angle": 43.58, "curve": "stepped" },
+					{ "time": 2.1666, "angle": 43.58 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0.69, "y": 0.69, "curve": "stepped" },
+					{
+						"time": 2.1666,
+						"x": 0.69,
+						"y": 0.69,
+						"curve": [ 0, 0, 0.484, 1 ]
+					},
+					{
+						"time": 2.3666,
+						"x": 1.37,
+						"y": 1.37,
+						"curve": [ 0.454, 0, 1, 1 ]
+					},
+					{ "time": 2.6666, "x": 0.372, "y": 0.372 }
+				]
+			},
+			"meteor/5star2": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 0.5, "angle": 0 },
+					{ "time": 1.3333, "angle": -178.08 },
+					{ "time": 2.1666, "angle": 6.06 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 1.3333, "x": 1, "y": 1 },
+					{
+						"time": 2.1666,
+						"x": 0.769,
+						"y": 0.769,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 2.3666,
+						"x": 1.528,
+						"y": 1.528,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 2.8333, "x": 0.372, "y": 0.372 }
+				]
+			},
+			"meteor/tail2": {
+				"rotate": [
+					{ "time": 0, "angle": 23.54, "curve": "stepped" },
+					{
+						"time": 0.5,
+						"angle": 23.54,
+						"curve": [ 0.297, 0.92, 0.719, 1 ]
+					},
+					{
+						"time": 1.1666,
+						"angle": 10.65,
+						"curve": [ 0.313, 0.22, 1, 1 ]
+					},
+					{ "time": 2.1666, "angle": -10.58 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{
+						"time": 0.5,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0.497, 0, 0.807, 0.44 ]
+					},
+					{
+						"time": 1.1666,
+						"x": 1.31,
+						"y": 1,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 2.2666, "x": 0.451, "y": 1 }
+				],
+				"shear": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{
+						"time": 0.5,
+						"x": 0,
+						"y": 0,
+						"curve": [ 1, 0, 1, 1 ]
+					},
+					{ "time": 2.2666, "x": -7.18, "y": -49.33 }
+				]
+			},
+			"Meteor3": {
+				"translate": [
+					{ "time": 0, "x": 15.92, "y": 18.53 }
+				]
+			},
+			"meteor3": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 2.056, "y": 2.056 }
+				]
+			},
+			"meteor/4star3": {
+				"rotate": [
+					{ "time": 0, "angle": 43.58 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0.69, "y": 0.69 }
+				]
+			},
+			"meteor/5star3": {
+				"rotate": [
+					{ "time": 0, "angle": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 }
+				]
+			},
+			"meteor/tail3": {
+				"rotate": [
+					{ "time": 0, "angle": 36.75 }
+				],
+				"translate": [
+					{ "time": 0, "x": -0.53, "y": 0.72 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 }
+				],
+				"shear": [
+					{ "time": 0, "x": 0, "y": 0 }
+				]
+			}
+		}
+	},
+	"run3": {
+		"slots": {
+			"meteor/4star1": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 1.6666, "name": "meteor/star2" },
+					{ "time": 2.1666, "name": null }
+				]
+			},
+			"meteor/4star2": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 2.1666, "name": "meteor/star2" },
+					{ "time": 2.6666, "name": null }
+				]
+			},
+			"meteor/4star3": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 2.6666, "name": "meteor/star2" },
+					{ "time": 3.1666, "name": null }
+				]
+			},
+			"meteor/5star1": {
+				"attachment": [
+					{ "time": 0, "name": "meteor/star" },
+					{ "time": 1.6666, "name": null }
+				]
+			},
+			"meteor/5star2": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 0.5, "name": "meteor/star" },
+					{ "time": 2.1666, "name": null }
+				]
+			},
+			"meteor/5star3": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 1, "name": "meteor/star" },
+					{ "time": 2.6666, "name": null }
+				]
+			},
+			"meteor/halo": {
+				"attachment": [
+					{ "time": 0, "name": "meteor/halo" },
+					{ "time": 2.3333, "name": null }
+				]
+			},
+			"meteor/halo2": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 0.5, "name": "meteor/halo" },
+					{ "time": 2.8333, "name": null }
+				]
+			},
+			"meteor/halo3": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 1, "name": "meteor/halo" },
+					{ "time": 3.3333, "name": null }
+				]
+			},
+			"meteor/points1": {
+				"color": [
+					{ "time": 0, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.7, "color": "ffffffff" },
+					{ "time": 1.9, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 0, "name": "meteor/points/01" },
+					{ "time": 0.1, "name": "meteor/points/02" },
+					{ "time": 0.2, "name": "meteor/points/03" },
+					{ "time": 0.3, "name": "meteor/points/01" },
+					{ "time": 0.4, "name": "meteor/points/02" },
+					{ "time": 0.5, "name": "meteor/points/03" },
+					{ "time": 0.6, "name": "meteor/points/01" },
+					{ "time": 0.7, "name": "meteor/points/02" },
+					{ "time": 0.8, "name": "meteor/points/03" },
+					{ "time": 0.9, "name": "meteor/points/01" },
+					{ "time": 1, "name": "meteor/points/02" },
+					{ "time": 1.1, "name": "meteor/points/03" },
+					{ "time": 1.2, "name": "meteor/points/01" },
+					{ "time": 1.3, "name": "meteor/points/02" },
+					{ "time": 1.4, "name": "meteor/points/03" },
+					{ "time": 1.5, "name": "meteor/points/01" },
+					{ "time": 1.6, "name": "meteor/points/02" },
+					{ "time": 1.7, "name": "meteor/points/03" },
+					{ "time": 1.8, "name": "meteor/points/01" },
+					{ "time": 1.9, "name": null }
+				]
+			},
+			"meteor/points2": {
+				"color": [
+					{ "time": 0, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2.2, "color": "ffffffff" },
+					{ "time": 2.4, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 0.5, "name": "meteor/points/01" },
+					{ "time": 0.6, "name": "meteor/points/02" },
+					{ "time": 0.7, "name": "meteor/points/03" },
+					{ "time": 0.8, "name": "meteor/points/01" },
+					{ "time": 0.9, "name": "meteor/points/02" },
+					{ "time": 1, "name": "meteor/points/03" },
+					{ "time": 1.1, "name": "meteor/points/01" },
+					{ "time": 1.2, "name": "meteor/points/02" },
+					{ "time": 1.3, "name": "meteor/points/03" },
+					{ "time": 1.4, "name": "meteor/points/01" },
+					{ "time": 1.5, "name": "meteor/points/02" },
+					{ "time": 1.6, "name": "meteor/points/03" },
+					{ "time": 1.7, "name": "meteor/points/01" },
+					{ "time": 1.8, "name": "meteor/points/02" },
+					{ "time": 1.9, "name": "meteor/points/03" },
+					{ "time": 2, "name": "meteor/points/01" },
+					{ "time": 2.1, "name": "meteor/points/02" },
+					{ "time": 2.2, "name": "meteor/points/03" },
+					{ "time": 2.3, "name": "meteor/points/01" }
+				]
+			},
+			"meteor/points3": {
+				"color": [
+					{ "time": 0, "color": "ffffffff", "curve": "stepped" },
+					{
+						"time": 2.6,
+						"color": "ffffffff",
+						"curve": [ 0.25, 0, 0.99, 1 ]
+					},
+					{ "time": 2.7666, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 1, "name": "meteor/points/01" },
+					{ "time": 1.1, "name": "meteor/points/02" },
+					{ "time": 1.2, "name": "meteor/points/03" },
+					{ "time": 1.3, "name": "meteor/points/01" },
+					{ "time": 1.4, "name": "meteor/points/02" },
+					{ "time": 1.5, "name": "meteor/points/03" },
+					{ "time": 1.6, "name": "meteor/points/01" },
+					{ "time": 1.7, "name": "meteor/points/02" },
+					{ "time": 1.8, "name": "meteor/points/03" },
+					{ "time": 1.9, "name": "meteor/points/01" },
+					{ "time": 2, "name": "meteor/points/02" },
+					{ "time": 2.1, "name": "meteor/points/03" },
+					{ "time": 2.2, "name": "meteor/points/01" },
+					{ "time": 2.3, "name": "meteor/points/02" },
+					{ "time": 2.4, "name": "meteor/points/03" },
+					{ "time": 2.5, "name": "meteor/points/01" },
+					{ "time": 2.6, "name": "meteor/points/02" },
+					{ "time": 2.7, "name": "meteor/points/03" },
+					{ "time": 2.8, "name": "meteor/points/01" }
+				]
+			},
+			"meteor/tail1": {
+				"color": [
+					{ "time": 0, "color": "ffffffff", "curve": "stepped" },
+					{
+						"time": 1.6,
+						"color": "ffffffff",
+						"curve": [ 0.25, 0, 0.99, 1 ]
+					},
+					{ "time": 1.7666, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 0, "name": "meteor/tail" },
+					{ "time": 1.9, "name": null }
+				]
+			},
+			"meteor/tail2": {
+				"color": [
+					{ "time": 0, "color": "ffffffff", "curve": "stepped" },
+					{
+						"time": 2.1,
+						"color": "ffffffff",
+						"curve": [ 0.25, 0, 0.99, 1 ]
+					},
+					{ "time": 2.2666, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 0.5, "name": "meteor/tail" }
+				]
+			},
+			"meteor/tail3": {
+				"color": [
+					{ "time": 0, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2.7, "color": "ffffffff" },
+					{ "time": 2.9, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 1, "name": "meteor/tail" }
+				]
+			}
+		},
+		"bones": {
+			"meteor/4star1": {
+				"rotate": [
+					{ "time": 0, "angle": 43.58 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0.69, "y": 0.69, "curve": "stepped" },
+					{
+						"time": 1.6666,
+						"x": 0.69,
+						"y": 0.69,
+						"curve": [ 0, 0, 0.484, 1 ]
+					},
+					{
+						"time": 1.8666,
+						"x": 1.37,
+						"y": 1.37,
+						"curve": [ 0.454, 0, 1, 1 ]
+					},
+					{ "time": 2.1666, "x": 0.372, "y": 0.372 }
+				]
+			},
+			"meteor1": {
+				"rotate": [
+					{
+						"time": 0,
+						"angle": 1.16,
+						"curve": [ 0.386, 0, 0.705, 0.42 ]
+					},
+					{
+						"time": 0.6666,
+						"angle": 0.7,
+						"curve": [ 0.339, 0.31, 0.635, 0.76 ]
+					},
+					{ "time": 1.6666, "angle": -20.86 }
+				],
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.091, 0.38, 0.581, 1 ]
+					},
+					{
+						"time": 0.6666,
+						"x": 76.31,
+						"y": -61.45,
+						"curve": [ 0.385, 0.14, 0.791, 0.72 ]
+					},
+					{ "time": 1.6666, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{
+						"time": 0,
+						"x": 2.056,
+						"y": 2.056,
+						"curve": [ 0.132, 0.47, 0.762, 1 ]
+					},
+					{ "time": 1.6666, "x": 0.927, "y": 0.927 }
+				]
+			},
+			"Meteor1": {
+				"translate": [
+					{
+						"time": 0,
+						"x": -86.25,
+						"y": -83.64,
+						"curve": [ 0.177, 0.56, 0.766, 0.96 ]
+					},
+					{ "time": 1.6666, "x": 649.57, "y": -807.28 }
+				]
+			},
+			"meteor/tail1": {
+				"rotate": [
+					{
+						"time": 0,
+						"angle": 9.79,
+						"curve": [ 0.02, 0.32, 0.432, 1 ]
+					},
+					{ "time": 1.6666, "angle": -1.47 }
+				],
+				"scale": [
+					{
+						"time": 0,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0.497, 0, 0.807, 0.44 ]
+					},
+					{
+						"time": 0.6666,
+						"x": 1.31,
+						"y": 1,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.7666, "x": 0.451, "y": 1 }
+				],
+				"shear": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 0,
+						"curve": [ 1, 0, 1, 1 ]
+					},
+					{ "time": 1.7666, "x": -7.18, "y": -49.33 }
+				]
+			},
+			"meteor/5star1": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.8333, "angle": -178.08 },
+					{ "time": 1.6666, "angle": 6.06 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 0.8333, "x": 1, "y": 1 },
+					{
+						"time": 1.6666,
+						"x": 0.769,
+						"y": 0.769,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.8666,
+						"x": 1.528,
+						"y": 1.528,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 2.3333, "x": 0.372, "y": 0.372 }
+				]
+			},
+			"Meteor2": {
+				"translate": [
+					{ "time": 0, "x": 27.76, "y": -115.18, "curve": "stepped" },
+					{
+						"time": 0.5,
+						"x": 27.76,
+						"y": -115.18,
+						"curve": [ 0.177, 0.56, 0.766, 0.96 ]
+					},
+					{ "time": 2.1666, "x": 554.06, "y": -497.22 }
+				]
+			},
+			"meteor2": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{
+						"time": 0.5,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.091, 0.38, 0.581, 1 ]
+					},
+					{
+						"time": 1.1666,
+						"x": 35.84,
+						"y": -32.88,
+						"curve": [ 0.385, 0.14, 0.791, 0.72 ]
+					},
+					{ "time": 2.1666, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1.226, "y": 1.226, "curve": "stepped" },
+					{
+						"time": 0.5,
+						"x": 1.226,
+						"y": 1.226,
+						"curve": [ 0.132, 0.47, 0.762, 1 ]
+					},
+					{ "time": 2.1666, "x": 0.727, "y": 0.727 }
+				]
+			},
+			"meteor/4star2": {
+				"rotate": [
+					{ "time": 0, "angle": 43.58, "curve": "stepped" },
+					{ "time": 2.1666, "angle": 43.58 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0.69, "y": 0.69, "curve": "stepped" },
+					{
+						"time": 2.1666,
+						"x": 0.69,
+						"y": 0.69,
+						"curve": [ 0, 0, 0.484, 1 ]
+					},
+					{
+						"time": 2.3666,
+						"x": 1.37,
+						"y": 1.37,
+						"curve": [ 0.454, 0, 1, 1 ]
+					},
+					{ "time": 2.6666, "x": 0.372, "y": 0.372 }
+				]
+			},
+			"meteor/5star2": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 0.5, "angle": 0 },
+					{ "time": 1.3333, "angle": -178.08 },
+					{ "time": 2.1666, "angle": 6.06 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 1.3333, "x": 1, "y": 1 },
+					{
+						"time": 2.1666,
+						"x": 0.769,
+						"y": 0.769,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 2.3666,
+						"x": 1.528,
+						"y": 1.528,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 2.8333, "x": 0.372, "y": 0.372 }
+				]
+			},
+			"meteor/tail2": {
+				"rotate": [
+					{ "time": 0, "angle": 23.54, "curve": "stepped" },
+					{
+						"time": 0.5,
+						"angle": 23.54,
+						"curve": [ 0.297, 0.92, 0.719, 1 ]
+					},
+					{
+						"time": 1.1666,
+						"angle": 11.71,
+						"curve": [ 0.235, 0, 1, 1 ]
+					},
+					{ "time": 2.1666, "angle": -19.18 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{
+						"time": 0.5,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0.497, 0, 0.807, 0.44 ]
+					},
+					{
+						"time": 1.1666,
+						"x": 1.31,
+						"y": 1,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 2.2666, "x": 0.451, "y": 1 }
+				],
+				"shear": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{
+						"time": 0.5,
+						"x": 0,
+						"y": 0,
+						"curve": [ 1, 0, 1, 1 ]
+					},
+					{ "time": 2.2666, "x": -7.18, "y": -49.33 }
+				]
+			},
+			"Meteor3": {
+				"translate": [
+					{ "time": 0, "x": 15.92, "y": 18.53, "curve": "stepped" },
+					{
+						"time": 1,
+						"x": 15.92,
+						"y": 18.53,
+						"curve": [ 0.177, 0.56, 0.766, 0.96 ]
+					},
+					{ "time": 2.6666, "x": 764.85, "y": -246.6 }
+				]
+			},
+			"meteor3": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{
+						"time": 1,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.091, 0.38, 0.581, 1 ]
+					},
+					{
+						"time": 1.6666,
+						"x": 55.33,
+						"y": -46.35,
+						"curve": [ 0.385, 0.14, 0.791, 0.72 ]
+					},
+					{ "time": 2.6666, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 2.056, "y": 2.056, "curve": "stepped" },
+					{
+						"time": 1,
+						"x": 2.056,
+						"y": 2.056,
+						"curve": [ 0.132, 0.47, 0.762, 1 ]
+					},
+					{ "time": 2.6666, "x": 0.927, "y": 0.927 }
+				]
+			},
+			"meteor/4star3": {
+				"rotate": [
+					{ "time": 0, "angle": 43.58 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0.69, "y": 0.69, "curve": "stepped" },
+					{
+						"time": 2.6666,
+						"x": 0.69,
+						"y": 0.69,
+						"curve": [ 0, 0, 0.484, 1 ]
+					},
+					{
+						"time": 2.8666,
+						"x": 1.37,
+						"y": 1.37,
+						"curve": [ 0.454, 0, 1, 1 ]
+					},
+					{ "time": 3.1666, "x": 0.372, "y": 0.372 }
+				]
+			},
+			"meteor/5star3": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1, "angle": 0 },
+					{ "time": 1.8333, "angle": -178.08 },
+					{ "time": 2.6666, "angle": 6.06 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 1.8333, "x": 1, "y": 1 },
+					{
+						"time": 2.6666,
+						"x": 0.769,
+						"y": 0.769,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 2.8666,
+						"x": 1.528,
+						"y": 1.528,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 3.3333, "x": 0.372, "y": 0.372 }
+				]
+			},
+			"meteor/tail3": {
+				"rotate": [
+					{ "time": 0, "angle": 36.75, "curve": "stepped" },
+					{
+						"time": 1,
+						"angle": 36.75,
+						"curve": [ 0, 0, 0.878, 1.12 ]
+					},
+					{
+						"time": 1.6666,
+						"angle": 27.01,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 2.6666, "angle": 3.61 }
+				],
+				"translate": [
+					{ "time": 0, "x": -0.53, "y": 0.72 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{
+						"time": 1,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0.497, 0, 0.807, 0.44 ]
+					},
+					{
+						"time": 1.6666,
+						"x": 1.31,
+						"y": 1,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 2.7666, "x": 0.451, "y": 1 }
+				],
+				"shear": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{
+						"time": 1,
+						"x": 0,
+						"y": 0,
+						"curve": [ 1, 0, 1, 1 ]
+					},
+					{ "time": 2.6666, "x": -7.18, "y": -49.33 }
+				]
+			}
+		}
+	}
+}
+}

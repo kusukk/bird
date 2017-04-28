@@ -1,0 +1,62 @@
+{
+"skeleton": { "hash": "bYjsEkLjNDqlUCTuDisLXMJ7Joo", "spine": "3.4.02", "width": 19.6, "height": 19.71, "images": "./picture/" },
+"bones": [
+	{ "name": "root", "scaleX": 0.372, "scaleY": 0.372 },
+	{ "name": "bone9", "parent": "root", "x": -265.17, "y": 452.57 },
+	{ "name": "gaoguang3", "parent": "bone9", "rotation": -49.74, "x": 265.17, "y": -452.57, "scaleX": 0.567, "scaleY": 0.567 }
+],
+"slots": [
+	{ "name": "buy/gaoguang3", "bone": "gaoguang3", "color": "ffffffce", "attachment": "gaoguang", "blend": "additive" }
+],
+"skins": {
+	"default": {
+		"buy/gaoguang3": {
+			"gaoguang": { "x": 1.37, "y": 3.65, "scaleX": 0.408, "scaleY": 0.408, "width": 167, "height": 156 }
+		}
+	}
+},
+"animations": {
+	"run": {
+		"slots": {
+			"buy/gaoguang3": {
+				"color": [
+					{ "time": 0, "color": "ffffff00" },
+					{ "time": 1.7666, "color": "ffffffce", "curve": "stepped" },
+					{ "time": 4.5333, "color": "ffffffce" },
+					{ "time": 6.5666, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 0, "name": "gaoguang" }
+				]
+			}
+		},
+		"bones": {
+			"gaoguang3": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 6.5666, "angle": 84.7 }
+				]
+			}
+		}
+	},
+	"stop": {
+		"slots": {
+			"buy/gaoguang3": {
+				"color": [
+					{ "time": 0, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"gaoguang3": {
+				"rotate": [
+					{ "time": 0, "angle": 0 }
+				]
+			}
+		}
+	}
+}
+}

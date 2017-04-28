@@ -1,0 +1,128 @@
+{
+"skeleton": { "hash": "C6icYjIttf59tlblRCvJL9QW/rg", "spine": "3.4.02", "width": 0, "height": 0, "images": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "effect", "parent": "root", "x": 0.27, "y": 0.59, "scaleX": 2.877, "scaleY": 2.877 }
+],
+"slots": [
+	{ "name": "effect/1", "bone": "effect" },
+	{ "name": "effect/2", "bone": "effect" },
+	{ "name": "effect/3", "bone": "effect" },
+	{ "name": "effect/4", "bone": "effect" },
+	{ "name": "effect/5", "bone": "effect" },
+	{ "name": "effect/6", "bone": "effect" },
+	{ "name": "effect/7", "bone": "effect" },
+	{ "name": "effect/0", "bone": "effect" }
+],
+"skins": {
+	"default": {
+		"effect/0": {
+			"effect/0": { "x": 0.14, "y": -0.99, "width": 177, "height": 177 }
+		},
+		"effect/1": {
+			"effect/1": { "x": 0.36, "y": 0.22, "width": 132, "height": 133 }
+		},
+		"effect/2": {
+			"effect/2": { "x": -5.62, "y": -1.93, "width": 189, "height": 198 }
+		},
+		"effect/3": {
+			"effect/3": { "x": -3.43, "y": -2.64, "width": 250, "height": 248 }
+		},
+		"effect/4": {
+			"effect/4": { "x": -6.88, "y": 1.39, "width": 289, "height": 271 }
+		},
+		"effect/5": {
+			"effect/5": { "x": -6.84, "y": 2.13, "width": 300, "height": 285 }
+		},
+		"effect/6": {
+			"effect/6": { "x": -7.44, "y": 3.08, "width": 300, "height": 288 }
+		},
+		"effect/7": {
+			"effect/7": { "x": 10.39, "y": 32.61, "width": 229, "height": 228 }
+		}
+	}
+},
+"animations": {
+	"run": {
+		"slots": {
+			"effect/0": {
+				"attachment": [
+					{ "time": 0, "name": "effect/0" },
+					{ "time": 0.2666, "name": null }
+				]
+			},
+			"effect/1": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 0.2666, "name": "effect/1" },
+					{ "time": 0.3666, "name": null }
+				]
+			},
+			"effect/2": {
+				"attachment": [
+					{ "time": 0.3666, "name": "effect/2" },
+					{ "time": 0.4333, "name": null }
+				]
+			},
+			"effect/3": {
+				"attachment": [
+					{ "time": 0.4333, "name": "effect/3" },
+					{ "time": 0.5, "name": null }
+				]
+			},
+			"effect/4": {
+				"attachment": [
+					{ "time": 0.5, "name": "effect/4" },
+					{ "time": 0.5666, "name": null }
+				]
+			},
+			"effect/5": {
+				"attachment": [
+					{ "time": 0.5666, "name": "effect/5" },
+					{ "time": 0.6333, "name": null }
+				]
+			},
+			"effect/6": {
+				"attachment": [
+					{ "time": 0.6333, "name": "effect/6" },
+					{ "time": 0.7, "name": null }
+				]
+			},
+			"effect/7": {
+				"attachment": [
+					{ "time": 0.7, "name": "effect/7" },
+					{ "time": 0.7333, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"root": {
+				"rotate": [
+					{ "time": 0, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 }
+				]
+			},
+			"effect": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{
+						"time": 0,
+						"x": 1.578,
+						"y": 1.578,
+						"curve": [ 0.25, 0, 0.897, 0.64 ]
+					},
+					{ "time": 0.2333, "x": 0.637, "y": 0.637 },
+					{ "time": 0.2666, "x": 1, "y": 1 }
+				]
+			}
+		}
+	}
+}
+}

@@ -1,0 +1,198 @@
+{
+    "comment_audio":"Id : [type, loop, volume, pitch, delay, group, files]",
+    "comment_type":"0 - background music, 1 - effect",
+    "comment_volume":"volume must be within the range of 0.0 as the minimum and 1.0 as the maximum",
+    "comment_pitch":"pitch multiplier. e.g 1.0 is unaltered, 0.5 is 1 octave lower]",
+    "audio":{
+        "game_battle_scene"                     :[0, -1, 1, 1, 0, "common", 0 ,         [""]],
+
+        "game_start_scene"                      :[0, -1, 1, 1, 0, "common", 0 ,         ["game_start_scene.m4a"]],
+
+        "map_bird_home"                         :[0, -1, 0.2, 1, 0, "common", 0 ,       ["map_bird_home.m4a"]],
+        "map_desert"                            :[0, -1, 0.8, 1, 0, "common", 0 ,       ["map_desert.m4a"]],
+        "map_magic_swamp"                       :[0, -1, 0.3, 1, 0, "common", 0 ,       ["map_magicswamp.m4a"]],
+        "map_beach"                             :[0, -1, 0.2, 1, 0, "common", 0 ,       ["map_beach.m4a"]],
+        "map_pigcity"                           :[0, -1, 0.4, 1, 0, "common", 1 ,       ["map_pigcity.m4a"]],
+		"map_garden"                           	:[0, -1, 0.4, 1, 0, "common", 1 ,       ["map_garden.m4a"]],
+		"map_christmasvillage"                  :[0, -1, 0.3, 1, 0, "common", 1 ,       ["map_christmasvillage.m4a"]],
+        "map_space"                             :[0, -1, 0.4, 1, 0, "common", 1 ,       ["map_space.m4a"]],
+
+		"map_clovercup"                         :[0, -1, 0.2, 1, 0, "common", 0 ,       ["map_bird_home.m4a"]],
+		"map_mightymountain"                    :[0, -1, 0.3, 1, 0, "common", 0 ,       ["map_mightymountain.m4a"]],
+		
+        "ingame_bird_home"                      :[0, -1, 0.8, 1, 0, "common", 1 ,       ["ingame_bird_home.m4a"]],
+        "ingame_beach"                          :[0, -1, 0.5, 1, 0, "common", 1 ,       ["ingame_beach.m4a"]],
+        "ingame_magic_swamp"                    :[0, -1, 0.7, 1, 0, "common", 1 ,       ["ingame_magicswamp.m4a"]],
+        "ingame_desert"                         :[0, -1, 1, 1, 0, "common", 1 ,         ["ingame_desert.m4a"]],
+        "ingame_pigcity"                        :[0, -1, 0.5, 1, 0, "common", 1 ,       ["ingame_pigcity.m4a"]],
+		"ingame_garden"                        	:[0, -1, 0.5, 1, 0, "common", 1 ,       ["ingame_garden.m4a"]],
+		"ingame_christmasvillage"               :[0, -1, 0.5, 1, 0, "common", 1 ,       ["ingame_christmasvillage.m4a"]],
+        "ingame_space"                          :[0, -1, 0.5, 1, 0, "common", 1 ,       ["ingame_space.m4a"]],
+
+		"ingame_clovercup"                      :[0, -1, 0.8, 1, 0, "common", 1 ,       ["ingame_bird_home.m4a"]],
+		"ingame_mightymountain"                 :[0, -1, 0.4, 1, 0, "common", 1 ,       ["ingame_mightymountain.m4a"]],
+		
+        "amb_bird_home"                         :[0, -1, 0.5, 1, 0, "common", 0 ,       ["amb_bird_home.m4a"]],
+        "amb_beach"                             :[0, -1, 0.3, 1, 0, "common", 0 ,       ["amb_beach.m4a"]],
+        "amb_magic_swamp"                       :[0, -1, 0.5, 1, 0, "common", 0 ,       ["amb_magicswamp.m4a"]],
+        "amb_desert"                            :[0, -1, 0.3, 1, 0, "common", 0 ,       ["amb_desert.m4a"]],
+        "amb_pigcity"                           :[0, -1, 0.6, 1, 0, "common", 0 ,       ["amb_pigcity.m4a"]],
+		"amb_garden"                           	:[0, -1, 0.5, 1, 0, "common", 0 ,       ["amb_garden.m4a"]],
+		"amb_christmasvillage"                  :[0, -1, 0.4, 1, 0, "common", 0 ,       ["amb_christmasvillage.m4a"]],
+        "amb_space"                             :[0, -1, 0.4, 1, 0, "common", 0 ,       ["amb_space.m4a"]],
+
+		"amb_clovercup"                         :[0, -1, 0.5, 1, 0, "common", 0 ,       ["amb_bird_home.m4a"]],
+        "amb_mightymountain_ingame"             :[0, -1, 0.4, 1, 0, "common", 0 ,       ["amb_mightymountain_ingame.m4a"]],
+        "amb_mightymountain_map"                :[0, -1, 0.3, 1, 0, "common", 0 ,       ["amb_beach.m4a"]],
+		
+        "ui_show_panel"                         :[1, 1, 0.4, 1, 0, "common", 0 ,        ["ui_show_panel.m4a"]],
+        "ui_close_panel"                        :[1, 1, 0.4, 1, 0, "common", 0 ,        ["ui_close_panel.m4a"]],
+        "ui_show_target"                        :[1, 1, 0.4, 1, 1, "common", 0 ,        ["ui_show_target.m4a"]],
+        "ui_hide_target"                        :[1, 1, 0.4, 1, 0.2, "common", 0 ,      ["ui_hide_target.m4a"]],
+		"ui_nextlevel_unlocked"                 :[1, 1, 0.5, 1, 0.3, "common", 0 ,      ["ui_nextlevel_unlocked.m4a"]],
+        "ui_exit"                               :[1, 1, 1, 1, 0, "common", 0 ,          ["ui_exit.m4a"]],
+        "ui_buy"                                :[1, 1, 1, 1, 0, "common", 0 ,          ["ui_buy.m4a"]],
+		"ui_leveltransition_close"              :[1, 1, 0.8, 1, 0, "common", 0 ,        ["ui_leveltransition_open_01.m4a", "ui_leveltransition_open_02.m4a"]],
+		"ui_leveltransition_open"               :[1, 1, 0.8, 1, 0, "common", 0 ,        ["ui_leveltransition_close_01.m4a", "ui_leveltransition_close_02.m4a"]],
+		"ui_hatchling_unlocked"                 :[1, 1, 1, 1, 0, "common", 0 ,          ["ui_hatchling_unlocked.m4a"]],
+		"ui_chestopen"                 			:[1, 1, 1, 1, 0, "common", 0 ,          ["ui_chestopen.m4a"]],
+		"ui_treasuremap_open"                 	:[1, 1, 0.7, 1, 0, "common", 0 ,        ["ui_treasuremap_open.m4a"]],
+		"ui_treasuremap_close"                	:[1, 1, 0.7, 1, 0, "common", 0 ,        ["ui_treasuremap_close.m4a"]],
+        "common_click"                          :[1, 1, 0.7, 1, 0, "common", 0 ,        ["common_click.m4a"]],
+        "common_getItem_reward"                 :[1, 1, 1, 1, 0.2, "common", 0 ,        ["common_getItem_reward.m4a"]],
+        "gold_fly"                              :[1, 1, 0.8, 1, 0, "common", 0 ,        ["gold_fly.m4a"]],
+        "silver_fly"                            :[1, 1, 0.8, 1, 0, "common", 0 ,        ["gold_fly.m4a"]],
+        "common_menu"                           :[1, 1, 1, 1, 0, "common", 0 ,          ["common_click.m4a"]],
+        "select_level_bird_jump"                :[1, 1, 0.7, 1, 0.1, "common", 0 ,      ["select_level_bird_jump_01.m4a","select_level_bird_jump_02.m4a"]],
+        "hp_full_animation"                     :[1, 1, 1, 1, 0.2, "common", 0 ,        ["hp_full_animation.m4a"]],
+        "refueling_bird"                        :[1, -1, 0.7, 1, 0, "common", 0 ,       ["refueling_bird.m4a"]],
+        "coin_shake"                            :[1, 1, 1, 1, 0, "common", 0 ,          [""]],
+		"red_tutorial_popup"                	:[1, 1, 0.7, 1, 0, "common", 0 ,        ["red_tutorial_popup_01.m4a","red_tutorial_popup_02.m4a", "red_tutorial_popup_03.m4a"]],
+
+        "balloon_blast"                         :[1, 1, 1, 1, 0, "common", 1 ,          ["balloon_blast_01.m4a","balloon_blast_02.m4a","balloon_blast_03.m4a", "balloon_blast_04.m4a"]],
+        "target_complete"                       :[1, 1, 1, 1, 0, "common", 1 ,          ["target_complete.m4a"]],
+        "target_reached"                        :[1, 1, 1, 1, 0, "common", 1 ,          ["target_reached.m4a"]],
+        "booster_combination"                   :[1, 1, 1, 1, 0, "common", 1 ,          ["booster_combination.m4a"]],
+		"rocket"                                :[1, 1, 1, 1, 0.2, "common", 1 ,        ["rocket_01.m4a", "rocket_02.m4a", "rocket_03.m4a"]],
+        "rocket_horizontal"                     :[1, 1, 1, 1, 0.2, "common", 1 ,        ["rocket_stereo_01.m4a", "rocket_stereo_02.m4a", "rocket_stereo_03.m4a"]],
+        "rocket_rocket"                         :[1, 1, 1, 1, 0, "common", 1 ,          ["rocket_rocket_stereo.m4a"]],
+        "rocket_bomb"                           :[1, 1, 1, 1, 0, "common", 1 ,          ["rocket_bomb_stereo.m4a"]],
+        "bomb_bomb"                             :[1, 1, 1, 1, 0, "common", 1 ,          ["bomb_bomb_stereo.m4a"]],
+        "bomb"                                  :[1, 1, 1, 1, 0.2, "common", 1 ,        ["bomb_01.m4a","bomb_02.m4a","bomb_03.m4a"]],
+        "laser_gun_laser_gun"                   :[1, 1, 1, 1, 0, "common", 1 ,          ["laser_gun_laser_gun_stereo.m4a"]],
+        "laser_gun"                             :[1, 1, 1, 1, 0, "common", 1 ,          ["laser_gun_01.m4a","laser_gun_02.m4a"]],
+        "slingshot"                             :[1, 1, 1, 1, 0, "common", 1 ,          ["slingshot_01.m4a","slingshot_02.m4a"]],
+        "twister"                               :[1, 1, 1, 1, 0, "common", 1 ,          ["twister.m4a"]],
+        "pigs_cheer"                            :[1, 1, 1, 1, 0, "common", 1 ,          ["pigs_cheer.m4a"]],
+        "get_star_1"                            :[1, 1, 1, 1, 0, "common", 1 ,        	["get_star_1.m4a"]],
+        "get_star_2"                            :[1, 1, 1, 1, 0, "common", 1 ,        	["get_star_2.m4a"]],
+        "get_star_3"                            :[1, 1, 1, 1, 0, "common", 1 ,        	["get_star_3.m4a"]],
+
+        "breaking_glass"                        :[1, 1, 0.7, 1, 0, "common", 1 ,        ["breaking_glass_01.m4a","breaking_glass_02.m4a","breaking_glass_03.m4a"]],
+        "breaking_wood"                         :[1, 1, 0.7, 1, 0, "common", 1 ,        ["breaking_wood_01.m4a","breaking_wood_02.m4a","breaking_wood_03.m4a"]],
+        "breaking_stone"                        :[1, 1, 0.7, 1, 0, "common", 1 ,        ["breaking_stone_01.m4a","breaking_stone_02.m4a","breaking_stone_03.m4a"]],
+        "cracking_stone"                        :[1, 1, 0.7, 1, 0, "common", 1 ,        ["cracking_stone_01.m4a","cracking_stone_02.m4a", "cracking_stone_03.m4a"]],
+        "cracking_wood"                         :[1, 1, 0.7, 1, 0, "common", 1 ,        ["cracking_wood_01.m4a", "cracking_wood_02.m4a","cracking_wood_03.m4a"]],
+
+        "breaking_wooden_box"                   :[1, 1, 1, 1, 0, "common", 1 ,          ["breaking_wooden_box_01.m4a","breaking_wooden_box_02.m4a","breaking_wooden_box_03.m4a"]],
+
+        "unlock_cage"                           :[1, 1, 0.7, 1, 0, "common", 1 ,        ["unlock_cage_01.m4a","unlock_cage_02.m4a"]],
+        "breaking_cage"                         :[1, 1, 0.7, 1, 0, "common", 1 ,        ["breaking_cage_01.m4a", "breaking_cage_02.m4a"]],
+
+        "bird_eliminate"                        :[1, 1, 0.3, 1, 0.5, "common", 1 ,      ["bird_fly_target_01.m4a","bird_fly_target_02.m4a","bird_fly_target_03.m4a","bird_fly_target_04.m4a","bird_fly_target_05.m4a"]],
+        "bird_fly_out"                          :[1, 1, 0.1, 1, 0.5, "common", 1 ,      ["bird_fly_out_01.m4a", "bird_fly_out_02.m4a","bird_fly_out_03.m4a"]],
+
+        "breaking_pig_balloon"                  :[1, 1, 1, 1, 0, "common", 1 ,          ["breaking_pig_balloon_01.m4a","breaking_pig_balloon_02.m4a","breaking_pig_balloon_03.m4a"]],
+
+        "pig_eliminate_die"                     :[1, 1, 1, 1, 0, "common", 1 ,          ["pig_eliminate_die_01.m4a", "pig_eliminate_die_02.m4a","pig_eliminate_die_03.m4a","pig_eliminate_die_04.m4a"]],
+        "pig_eliminate_prop_die"                :[1, 1, 1, 1, 0, "common", 1 ,          ["pig_eliminate_prop_die_01.m4a", "pig_eliminate_prop_die_02.m4a","pig_eliminate_prop_die_03.m4a"]],
+        "pig_hit"                               :[1, 1, 1, 1, 0, "common", 1 ,          ["pig_hit_01.m4a","pig_hit_02.m4a","pig_hit_03.m4a"]],
+        "pig_expression_angry"                  :[1, 1, 0.6, 1, 0, "common", 1 ,        ["pig_expression_angry_01.m4a","pig_expression_angry_02.m4a","pig_expression_angry_03.m4a"]],
+        "pig_expression_boring"                 :[1, 1, 0.6, 1, 0, "common", 1 ,        ["pig_expression_boring_01.m4a","pig_expression_boring_02.m4a","pig_expression_boring_03.m4a"]],
+        "pig_expression_laugh_1"                :[1, 1, 0.6, 1, 0, "common", 1 ,        ["pig_expression_laugh_1_01.m4a","pig_expression_laugh_1_02.m4a","pig_expression_laugh_1_03.m4a"]],
+        "pig_expression_laugh_2"                :[1, 1, 0.6, 1, 0, "common", 1 ,        ["pig_expression_laugh_2_01.m4a","pig_expression_laugh_2_02.m4a","pig_expression_laugh_2_03.m4a"]],
+        "pig_expression_laugh_around"           :[1, 1, 0.6, 1, 0, "common", 1 ,        ["pig_expression_laugh_around_01.m4a","pig_expression_laugh_around_02.m4a","pig_expression_laugh_around_03.m4a"]],
+        "pig_expression_laugh_jump_down"        :[1, 1, 0.6, 1, 0, "common", 1 ,        ["pig_expression_laugh_jump_down_01.m4a","pig_expression_laugh_jump_down_02.m4a","pig_expression_laugh_jump_down_03.m4a"]],
+        "pig_expression_laugh_jump_up"          :[1, 1, 0.6, 1, 0, "common", 1 ,        ["pig_expression_laugh_jump_up_01.m4a","pig_expression_laugh_jump_up_02.m4a","pig_expression_laugh_jump_up_03.m4a"]],
+        "pig_expression_laugh_jump_right"       :[1, 1, 0.6, 1, 0, "common", 1 ,        ["pig_expression_laugh_jump_right_01.m4a", "pig_expression_laugh_jump_right_02.m4a"]],
+        "pig_expression_laugh_stupid_down"      :[1, 1, 0.6, 1, 0, "common", 1 ,        ["pig_expression_laugh_stupid_down_01.m4a", "pig_expression_laugh_stupid_down_02.m4a"]],
+        "pig_expression_laugh_stupid_up"        :[1, 1, 0.6, 1, 0, "common", 1 ,        ["pig_expression_laugh_stupid_up_01.m4a","pig_expression_laugh_stupid_up_02.m4a"]],
+        "pig_expression_scare_down"             :[1, 1, 0.6, 1, 0, "common", 1 ,        ["pig_expression_scare_down_01.m4a","pig_expression_scare_down_02.m4a","pig_expression_scare_down_03.m4a"]],
+        "pig_expression_scare_right"            :[1, 1, 0.6, 1, 0, "common", 1 ,        ["pig_expression_scare_down_01.m4a","pig_expression_scare_down_02.m4a","pig_expression_scare_down_03.m4a"]],
+        "pig_expression_scare_right_down"       :[1, 1, 0.6, 1, 0, "common", 1 ,        ["pig_expression_scare_right_up_01.m4a","pig_expression_scare_right_up_02.m4a","pig_expression_scare_right_up_03.m4a"]],
+        "pig_expression_scare_right_up"         :[1, 1, 0.6, 1, 0, "common", 1 ,        ["pig_expression_scare_right_up_01.m4a","pig_expression_scare_right_up_02.m4a","pig_expression_scare_right_up_03.m4a"]],
+        "pig_expression_sleep-1"                :[1, -1,0.6, 1, 0, "common", 1 ,        ["pig_expression_sleep_01.m4a"]],
+        "pig_expression_sleep-2"                :[1, -1,0.6, 1, 0, "common", 1 ,        ["pig_expression_sleep_02.m4a"]],
+
+        "bubble_burst"                          :[1, 1, 1, 1, 0, "common", 1 ,          ["bubble_burst_01.m4a", "bubble_burst_02.m4a","bubble_burst_03.m4a"]],
+        "absorb_eggs"                           :[1, 1, 1, 1, 0, "common", 1 ,          ["absorb_eggs_01.m4a", "absorb_eggs_02.m4a"]],
+		"babypig_created"                       :[1, 1, 0.7, 1, 0, "common", 1 ,        ["babypig_created_01.m4a", "babypig_created_02.m4a", "babypig_created_03.m4a", "babypig_created_04.m4a"]],
+
+        "paint_bucket_shake"                    :[1, 1, 1, 1, 0, "common", 1 ,          ["paint_bucket_shake_01.m4a", "paint_bucket_shake_02.m4a"]],
+        "paint_bucket_fall"                     :[1, 1, 1, 1, 0, "common", 1 ,          ["paint_bucket_fall_01.m4a", "paint_bucket_fall_02.m4a"]],
+        "carousel"                              :[1, 1, 0.8, 1, 0, "common", 1 ,        ["carousel_01.m4a","carousel_02.m4a"]],
+
+        "bread_bird_eat"                        :[1, 1, 1, 1, 0, "common", 1 ,          ["bread_bird_eat_01.m4a","bread_bird_eat_02.m4a"]],
+        "bread_eliminate"                       :[1, 1, 1, 1, 0, "common", 1 ,          ["bread_eliminate_01.m4a", "bread_eliminate_02.m4a"]],
+
+        "cloud_appear"                          :[1, 1, 1, 1, 0, "common", 1 ,          ["cloud_appear_01.m4a", "cloud_appear_02.m4a", "cloud_appear_03.m4a"]],
+        "cloud_eliminate"                       :[1, 1, 1, 1, 0, "common", 1 ,          ["cloud_eliminate_01.m4a", "cloud_eliminate_02.m4a", "cloud_eliminate_03.m4a"]],
+
+		"balloonholder_destroyed"               :[1, 1, 0.7, 1, 0, "common", 1 ,        ["balloonholder_destroyed_01.m4a", "balloonholder_destroyed_02.m4a", "balloonholder_destroyed_03.m4a"]],
+		"pig_openumbrella"                      :[1, 1, 0.7, 1, 0, "common", 1 ,        ["pig_openumbrella_01.m4a", "pig_openumbrella_02.m4a", "pig_openumbrella_03.m4a"]],
+		"mysterysender_activate"                :[1, 1, 0.8, 1, 0, "common", 1 ,        ["mysterysender_activate_01.m4a", "mysterysender_activate_02.m4a", "mysterysender_activate_03.m4a"]],
+		
+        "random_launch_bomb"                    :[1, 1, 1, 1, 0, "common", 1 ,          ["random_launch_bomb_01.m4a", "random_launch_bomb_02.m4a", "random_launch_bomb_03.m4a", "random_launch_bomb_04.m4a"]],
+
+        "big_pig_eliminate_die"                 :[1, 1, 1, 1, 0, "common", 1 ,          ["big_pig_eliminate_die_01.m4a","big_pig_eliminate_die_02.m4a","big_pig_eliminate_die_03.m4a"]],
+        "big_pig_eliminate_prop_die"            :[1, 1, 1, 1, 0, "common", 1 ,          ["big_pig_eliminate_prop_die_01.m4a","big_pig_eliminate_prop_die_02.m4a"]],
+        "big_pig_very_hurt"                     :[1, 1, 1, 1, 0, "common", 1 ,          ["big_pig_very_hurt_01.m4a","big_pig_very_hurt_02.m4a"]],
+        "big_pig_expression_afraid_1"           :[1, 1, 1, 1, 0, "common", 1 ,          ["big_pig_expression_afraid_1_01.m4a", "big_pig_expression_afraid_1_02.m4a"]],
+        "big_pig_expression_hurt_1"             :[1, 1, 1, 1, 0, "common", 1 ,          ["big_pig_expression_hurt_1_01.m4a", "big_pig_expression_hurt_1_02.m4a","big_pig_expression_hurt_1_03.m4a"]],
+        "big_pig_expression_laugh"              :[1, 1, 1, 1, 0, "common", 1 ,          ["big_pig_expression_laugh_01.m4a","big_pig_expression_laugh_02.m4a","big_pig_expression_laugh_03.m4a"]],
+        "big_pig_expression_afraid_2"           :[1, 1, 1, 1, 0, "common", 1 ,          ["big_pig_expression_afraid_2_01.m4a","big_pig_expression_afraid_2_02.m4a"]],
+        "big_pig_expression_hurt_2"             :[1, 1, 1, 1, 0, "common", 1 ,          ["big_pig_expression_hurt_2_01.m4a", "big_pig_expression_hurt_2_02.m4a","big_pig_expression_hurt_2_03.m4a"]],
+
+        "ufo_pig_in_scene"                      :[1, 1, 1, 1, 0, "common", 1 ,          ["ufo_pig_in_scene.m4a"]],
+        "ufo_pig_jump_move"                     :[1, 1, 1, 1, 0, "common", 1 ,          ["ufo_pig_jump_move_01.m4a","ufo_pig_jump_move_02.m4a"]],
+        "ufo_pig_unlock"                        :[1, 1, 1, 1, 0, "common", 1 ,          [""]],
+        "ufo_pig_lock"                          :[1, 1, 1, 1, 0, "common", 1 ,          [""]],
+        "ufo_pig_hit"                           :[1, 1, 1, 1, 0, "common", 1 ,          ["ufo_pig_hit_01.m4a","ufo_pig_hit_02.m4a","ufo_pig_hit_03.m4a"]],
+        "ufo_pig_die"                           :[1, 1, 1, 1, 0, "common", 1 ,          ["ufo_pig_die_01.m4a","ufo_pig_die_02.m4a","ufo_pig_die_03.m4a"]],
+
+        "clear_eliminate_wow"                   :[1, 1, 1, 1, 0, "common", 1 ,          ["clear_eliminate_wow_01.m4a","clear_eliminate_wow_02.m4a"]],
+        "clear_eliminate_eggscellent"           :[1, 1, 1, 1, 0, "common", 1 ,          ["clear_eliminate_eggscellent_01.m4a","clear_eliminate_eggscellent_02.m4a"]],
+        "clear_eliminate_blasty"                :[1, 1, 1, 1, 0, "common", 1 ,          ["clear_eliminate_blasty_01.m4a","clear_eliminate_blasty_02.m4a"]],
+
+        "box_map_bomb"                          :[1, 1, 1, 1, 0, "common", 1 ,          ["box_map_bomb_01.m4a", "box_map_bomb_02.m4a"]],
+
+        "cracking_magic_pig"                    :[1, 1, 1, 1, 0, "common", 1 ,          ["cracking_magic_pig_01.m4a","cracking_magic_pig_02.m4a","cracking_magic_pig_03.m4a"]],
+        "eliminate_magic_pig"                   :[1, 1, 0.6, 1, 0, "common", 1 ,        ["eliminate_magic_pig_01.m4a","eliminate_magic_pig_02.m4a"]],
+        "spell_magic_pig"                       :[1, 1, 1, 1, 0, "common", 1 ,          ["spell_magic_pig_01.m4a","spell_magic_pig_02.m4a"]],
+        "slime_hit"                             :[1, 1, 0.5, 1, 0, "common", 1 ,        ["slime_hit_01.m4a", "slime_hit_02.m4a", "slime_hit_03.m4a", "slime_hit_04.m4a"]],
+
+        "matilda_shake"                         :[1, 1, 0.5, 1, 0, "common", 1 ,        ["matilda_shake_01.m4a","matilda_shake_02.m4a","matilda_shake_03.m4a"]],
+        "matilda_throw"                         :[1, 1, 1, 1, 0, "common", 1 ,          ["matilda_throw_01.m4a","matilda_throw_02.m4a","matilda_throw_03.m4a"]],
+        "matilda_bottle_explosion"              :[1, 1, 1, 1, 0, "common", 1 ,          ["matilda_bottle_explosion_01.m4a","matilda_bottle_explosion_02.m4a", "matilda_bottle_explosion_03.m4a"]],
+
+        "super_angry_bird"                      :[1, 1, 1, 1, 0, "common", 1 ,          ["super_angry_bird_01.m4a","super_angry_bird_02.m4a"]],
+		"babybird_fly"                      	:[1, 1, 0.5, 1, 0, "common", 1 ,        ["babybird_fly_01.m4a", "babybird_fly_02.m4a", "babybird_fly_03.m4a", "babybird_fly_04.m4a"]],
+
+        "stone_turn"                            :[1, 1, 1, 1, 0, "common", 1 ,          ["stone_turn_01.m4a","stone_turn_02.m4a"]],
+
+        "levelfail_balloonpop"                  :[1, 1, 1, 1, 1.5, "common", 1 ,        ["levelfail_balloonpop_01.m4a","levelfail_balloonpop_02.m4a"]],
+        "levelfailed_stinger"                   :[1, 1, 0.5, 1, 0, "common", 1 ,        ["levelfailed_stinger.m4a"]],
+        "levelfinish_screen"                    :[1, 1, 1, 1, 0, "common", 1 ,          ["levelcompleted_stinger.m4a"]],
+        "outofmoves_loop"                       :[1,-1, 0.5, 1, 0, "common", 1 ,        ["outofmoves_loop.m4a"]],
+        "plus_5_moves"                          :[1, 1, 1, 1, 0, "common", 1 ,          ["plus_5_moves.m4a"]],
+        "plus_5_moves_fly"                      :[1, 1, 1, 1, 0, "common", 1 ,          ["random_launch_bomb_04.m4a"]]
+
+    },
+    "comment_group":"GroupId:volume",
+    "group":{
+        "common":1,
+        "map_element_stage1":1,
+        "game_element":1
+    }
+
+}

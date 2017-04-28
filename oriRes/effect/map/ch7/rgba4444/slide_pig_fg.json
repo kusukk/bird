@@ -1,0 +1,92 @@
+{
+"skeleton": { "hash": "ePLc2dk5neGMZrB6qhet1AeTZ5c", "spine": "3.4.02", "width": 837.85, "height": 658.49, "images": "./picture/" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "root2", "parent": "root" }
+],
+"slots": [
+	{ "name": "door_shadow", "bone": "root2", "attachment": "door_shadow" },
+	{ "name": "door", "bone": "root2", "attachment": "door" },
+	{ "name": "fence", "bone": "root2", "attachment": "fence" },
+	{ "name": "tree", "bone": "root2", "attachment": "tree" },
+	{ "name": "tree2", "bone": "root2", "attachment": "tree" },
+	{ "name": "stone", "bone": "root2", "attachment": "stone" }
+],
+"skins": {
+	"default": {
+		"door": {
+			"door": { "x": 64.46, "y": 58.45, "width": 184, "height": 138 }
+		},
+		"door_shadow": {
+			"door_shadow": { "x": 19.95, "y": 47.07, "scaleX": 1.492, "scaleY": 1.492, "rotation": 8.75, "width": 51, "height": 51 }
+		},
+		"fence": {
+			"fence": { "x": 43.55, "y": -474.5, "width": 72, "height": 83 }
+		},
+		"stone": {
+			"stone": { "x": -564.89, "y": -441.02, "width": 233, "height": 159 }
+		},
+		"tree": {
+			"tree": { "x": -66.2, "y": -435.67, "width": 32, "height": 47 }
+		},
+		"tree2": {
+			"tree": { "x": 125.13, "y": -507.53, "width": 32, "height": 47 }
+		}
+	}
+},
+"animations": {
+	"run": {
+		"slots": {
+			"door": {
+				"attachment": [
+					{ "time": 0, "name": "door" }
+				]
+			},
+			"door_shadow": {
+				"attachment": [
+					{ "time": 0, "name": "door_shadow" }
+				]
+			},
+			"fence": {
+				"attachment": [
+					{ "time": 0, "name": "fence" }
+				]
+			},
+			"tree": {
+				"attachment": [
+					{ "time": 0, "name": "tree" }
+				]
+			},
+			"tree2": {
+				"attachment": [
+					{ "time": 0, "name": "tree" }
+				]
+			}
+		},
+		"bones": {
+			"root": {
+				"rotate": [
+					{ "time": 0, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 }
+				]
+			},
+			"root2": {
+				"rotate": [
+					{ "time": 0, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 }
+				]
+			}
+		}
+	}
+}
+}

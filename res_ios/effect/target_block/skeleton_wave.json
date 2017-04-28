@@ -1,0 +1,84 @@
+{
+"skeleton": { "hash": "rvXfdqGxD9ax1N8jKf72NsKNrWk", "spine": "3.4.02", "width": 0, "height": 0, "images": "./picture/red/" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "sbfx", "parent": "root", "scaleX": 1.142, "scaleY": 1.142 },
+	{ "name": "sbfx2", "parent": "root", "scaleX": -1.14, "scaleY": 1.142 }
+],
+"slots": [
+	{ "name": "sbfx/sb1", "bone": "sbfx", "attachment": "sbfx/sb5" },
+	{ "name": "sbfx/sb6", "bone": "sbfx2", "attachment": "sbfx/sb5" }
+],
+"skins": {
+	"default": {
+		"sbfx/sb1": {
+			"sbfx/sb1": { "x": 1.03, "y": -7.92, "width": 80, "height": 51 },
+			"sbfx/sb2": { "x": 20.14, "y": -7.04, "width": 114, "height": 63 },
+			"sbfx/sb3": { "x": 36.64, "y": -5.68, "width": 123, "height": 65 },
+			"sbfx/sb4": { "x": 65.14, "y": -5.81, "width": 102, "height": 66 },
+			"sbfx/sb5": { "x": 100.64, "y": 1.93, "width": 50, "height": 44 }
+		},
+		"sbfx/sb6": {
+			"sbfx/sb1": { "x": 1.03, "y": -7.92, "width": 80, "height": 51 },
+			"sbfx/sb2": { "x": 20.14, "y": -7.04, "width": 114, "height": 63 },
+			"sbfx/sb3": { "x": 36.64, "y": -5.68, "width": 123, "height": 65 },
+			"sbfx/sb4": { "x": 65.14, "y": -5.81, "width": 102, "height": 66 },
+			"sbfx/sb5": { "x": 100.64, "y": 1.93, "width": 50, "height": 44 }
+		}
+	}
+},
+"animations": {
+	"run": {
+		"slots": {
+			"sbfx/sb1": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 0.3333, "name": "sbfx/sb1" },
+					{ "time": 0.4, "name": "sbfx/sb2" },
+					{ "time": 0.4666, "name": "sbfx/sb3" },
+					{ "time": 0.5333, "name": "sbfx/sb4" },
+					{ "time": 0.6, "name": "sbfx/sb5" },
+					{ "time": 0.6666, "name": null }
+				]
+			},
+			"sbfx/sb6": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 0.4666, "name": "sbfx/sb1" },
+					{ "time": 0.5333, "name": "sbfx/sb2" },
+					{ "time": 0.6, "name": "sbfx/sb3" },
+					{ "time": 0.6666, "name": "sbfx/sb4" },
+					{ "time": 0.7333, "name": "sbfx/sb5" },
+					{ "time": 0.8, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"sbfx": {
+				"rotate": [
+					{ "time": 0, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 10.23, "y": 28.83 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 }
+				]
+			},
+			"sbfx2": {
+				"rotate": [
+					{ "time": 0, "angle": 2.29 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.3333, "x": 0, "y": 0 },
+					{ "time": 0.4666, "x": -24.29, "y": 18.8 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 }
+				]
+			}
+		}
+	}
+}
+}

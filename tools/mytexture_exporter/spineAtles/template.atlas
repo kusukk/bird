@@ -1,0 +1,16 @@
+
+	  {{texture.fullName}}
+	  size: {{texture.size.width}},{{texture.size.height}}
+	  format: RGBA8888
+	  filter: Linear,Linear
+	  repeat: none
+	  {% for sprite in allSprites %}{{sprite.trimmedName}}
+	    rotate: {{sprite.rotated}}
+	    xy: {{sprite.frameRect.x}}, {{sprite.frameRect.y}}{% if not sprite.rotated %}
+	    size: {{sprite.frameRect.width}}, {{sprite.frameRect.height}}
+	    orig: {{sprite.frameRect.width}}, {{sprite.frameRect.height}}{% else %}
+	    size: {{sprite.frameRect.height}}, {{sprite.frameRect.width}}
+	    orig: {{sprite.frameRect.height}}, {{sprite.frameRect.width}}{% endif %}
+	    offset: 0, 0
+	    index: -1
+	  {% if not forloop.last %}{% endif %}{% endfor %}

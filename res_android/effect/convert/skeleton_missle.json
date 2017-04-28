@@ -1,0 +1,183 @@
+{
+"skeleton": { "hash": "SFkFsHjHZlvGgUyPwsL7EPzM5EM", "spine": "3.4.02", "width": 0, "height": 0, "images": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "root2", "parent": "root" },
+	{ "name": "images/l1", "parent": "root2", "length": 639.87, "rotation": 90.93, "x": 3.07, "y": 1.45 },
+	{ "name": "大枪/shan0", "parent": "root2", "x": 11.47, "y": 620.59 }
+],
+"slots": [
+	{ "name": "images/l1", "bone": "images/l1" },
+	{ "name": "images/l2", "bone": "images/l1" },
+	{ "name": "images/l3", "bone": "images/l1" },
+	{ "name": "images/l4", "bone": "images/l1" },
+	{ "name": "images/l5", "bone": "images/l1" },
+	{ "name": "images/l6", "bone": "images/l1" },
+	{ "name": "大枪/shan0", "bone": "大枪/shan0" }
+],
+"skins": {
+	"default": {
+		"images/l1": {
+			"images/l1": { "x": 18.18, "y": 1.13, "rotation": -89.54, "width": 339, "height": 249 }
+		},
+		"images/l2": {
+			"images/l2": { "x": 238.99, "y": 7.46, "rotation": -90.45, "width": 269, "height": 675 }
+		},
+		"images/l3": {
+			"images/l3": { "x": 233.19, "y": -0.96, "rotation": -89.09, "width": 292, "height": 666 }
+		},
+		"images/l4": {
+			"images/l4": { "x": 248.6, "y": -1.82, "rotation": -88.4, "width": 295, "height": 684 }
+		},
+		"images/l5": {
+			"images/l5": { "x": 264.56, "y": 0.29, "rotation": -89.54, "width": 281, "height": 713 }
+		},
+		"images/l6": {
+			"images/l6": { "x": 259.49, "y": -17.99, "rotation": -89.54, "width": 260, "height": 706 }
+		},
+		"大枪/shan0": {
+			"大枪/shan0": { "y": -6.92, "width": 189, "height": 182 }
+		}
+	}
+},
+"events": {
+	"1": {}
+},
+"animations": {
+	"run": {
+		"slots": {
+			"images/l1": {
+				"color": [
+					{ "time": 0, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "time": 0, "name": "images/l1" },
+					{ "time": 0.0666, "name": "images/l1" },
+					{ "time": 0.1333, "name": null }
+				]
+			},
+			"images/l2": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 0.1333, "name": "images/l2" },
+					{ "time": 0.1666, "name": null }
+				]
+			},
+			"images/l3": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 0.1666, "name": "images/l3" },
+					{ "time": 0.2333, "name": null }
+				]
+			},
+			"images/l4": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 0.2333, "name": "images/l4" },
+					{ "time": 0.3333, "name": null }
+				]
+			},
+			"images/l5": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 0.3333, "name": "images/l5" },
+					{ "time": 0.4, "name": null }
+				]
+			},
+			"images/l6": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 0.4, "name": "images/l6" },
+					{ "time": 0.4666, "name": null }
+				]
+			},
+			"大枪/shan0": {
+				"color": [
+					{
+						"time": 0.4333,
+						"color": "ffffffff",
+						"curve": [ 0.25, 0, 1, 0.8 ]
+					},
+					{ "time": 0.5666, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 0.1666, "name": "大枪/shan0" }
+				]
+			}
+		},
+		"bones": {
+			"images/l1": {
+				"rotate": [
+					{ "time": 0, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{
+						"time": 0,
+						"x": 0.485,
+						"y": 0.485,
+						"curve": [ 0.25, 0, 1, 0.63 ]
+					},
+					{ "time": 0.0666, "x": 1, "y": 1 }
+				]
+			},
+			"大枪/shan0": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 0.1666, "angle": 0 },
+					{ "time": 0.5666, "angle": -30.63 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 0.1666, "x": -5.8, "y": -78.21 },
+					{ "time": 0.5666, "x": -8.84, "y": -58.23 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 },
+					{
+						"time": 0.1666,
+						"x": 0.495,
+						"y": 0.495,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.4333,
+						"x": 1.475,
+						"y": 1.475,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.5666, "x": 1, "y": 1 }
+				]
+			},
+			"root": {
+				"rotate": [
+					{ "time": 0, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 }
+				]
+			},
+			"root2": {
+				"rotate": [
+					{ "time": 0, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 }
+				]
+			}
+		},
+		"drawOrder": [
+			{ "time": 0 }
+		]
+	}
+}
+}

@@ -1,0 +1,118 @@
+{
+"skeleton": { "hash": "aHQdIWUaabPxrX7W5Ztb7OlHhKk", "spine": "3.4.02", "width": 140.37, "height": 136.58, "images": "./picture/" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "balloon", "parent": "root", "rotation": 12.47, "scaleX": 0.7, "scaleY": 0.7 }
+],
+"slots": [
+	{ "name": "shadow", "bone": "balloon", "attachment": "shadow" },
+	{ "name": "balloon", "bone": "balloon", "attachment": "balloon" }
+],
+"skins": {
+	"default": {
+		"balloon": {
+			"balloon": {
+				"type": "mesh",
+				"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0, 0.2566, 0.40078, 0.73569, 0.24751, 0.78327, 0.53841, 0.44897, 0.68293 ],
+				"triangles": [ 5, 2, 3, 4, 2, 5, 6, 5, 3, 7, 4, 5, 6, 7, 5, 1, 2, 4, 1, 4, 7, 6, 3, 0, 7, 6, 0, 1, 7, 0 ],
+				"vertices": [ 63.75, -107, -119.81, -66.48, -81.87, 105.36, 101.68, 64.83999, -49.97, 26.09, 43.77, 33.02, 41.47, -18.89, -25.36, -30.18 ],
+				"hull": 4,
+				"edges": [ 0, 2, 2, 4, 4, 6, 0, 6, 8, 10, 10, 12, 12, 14, 14, 8 ],
+				"width": 121,
+				"height": 111
+			}
+		},
+		"shadow": {
+			"shadow": { "x": -17.85, "y": -11.33, "scaleX": 1.506, "scaleY": 1.506, "rotation": -12.47, "width": 133, "height": 126 }
+		}
+	}
+},
+"animations": {
+	"run": {
+		"slots": {
+			"balloon": {
+				"attachment": [
+					{ "time": 0, "name": "balloon" }
+				]
+			},
+			"shadow": {
+				"attachment": [
+					{ "time": 0, "name": "shadow" }
+				]
+			}
+		},
+		"bones": {
+			"balloon": {
+				"rotate": [
+					{
+						"time": 0,
+						"angle": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1,
+						"angle": -5.1,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.3333, "angle": 0 }
+				],
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1,
+						"x": 0,
+						"y": 18.01,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.3333, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{
+						"time": 0,
+						"x": 0.949,
+						"y": 0.949,
+						"curve": [ 0.167, 0, 0.445, 0.99 ]
+					},
+					{
+						"time": 1,
+						"x": 1.136,
+						"y": 1.136,
+						"curve": [ 0.25, 0, 0.455, 1 ]
+					},
+					{ "time": 1.3333, "x": 0.949, "y": 0.949 }
+				]
+			}
+		},
+		"deform": {
+			"default": {
+				"balloon": {
+					"balloon": [
+						{
+							"time": 0,
+							"offset": 8,
+							"vertices": [ 3.31244, -1.83244, -2.90327, -2.18602, -2.16619, 2.0903, 1.50293, 2.64945 ],
+							"curve": [ 0.167, 0, 0.445, 0.99 ]
+						},
+						{
+							"time": 1,
+							"offset": 8,
+							"vertices": [ -17.47714, 2.09373, 4.53401, 11.7458, 7.15521, -3.90851, -10.54081, -10.58965 ],
+							"curve": [ 0.25, 0, 0.455, 1 ]
+						},
+						{
+							"time": 1.3333,
+							"offset": 8,
+							"vertices": [ 3.31244, -1.83244, -2.90327, -2.18602, -2.16619, 2.0903, 1.50293, 2.64945 ]
+						}
+					]
+				}
+			}
+		}
+	}
+}
+}

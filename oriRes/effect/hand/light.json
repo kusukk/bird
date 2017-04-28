@@ -1,0 +1,65 @@
+{
+"skeleton": { "hash": "nop/6Rz5cYBx040exZmwle4mOEg", "spine": "3.4.02", "width": 0, "height": 0, "images": "./picture/" },
+"bones": [
+	{ "name": "root", "x": -235.24, "y": -403.27 },
+	{ "name": "bone6", "parent": "root", "x": 235.24, "y": 403.27, "scaleX": 0.754, "scaleY": 0.754 }
+],
+"slots": [
+	{ "name": "yunying5", "bone": "bone6", "blend": "additive" }
+],
+"skins": {
+	"default": {
+		"yunying5": {
+			"yunying2": { "x": -0.16, "y": -0.07, "width": 35, "height": 35 }
+		}
+	}
+},
+"events": {
+	"line": {},
+	"run1": {},
+	"run2": {},
+	"run3": {},
+	"run4": {},
+	"run5": {}
+},
+"animations": {
+	"animation": {
+		"slots": {
+			"yunying5": {
+				"color": [
+					{ "time": 0, "color": "ffffffff", "curve": "stepped" },
+					{
+						"time": 0.2333,
+						"color": "ffffffff",
+						"curve": [ 0, 1, 0.75, 1 ]
+					},
+					{ "time": 0.5666, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 0, "name": "yunying2" },
+					{ "time": 0.5666, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"bone6": {
+				"scale": [
+					{
+						"time": 0,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0, 1, 0.75, 1 ]
+					},
+					{
+						"time": 0.2333,
+						"x": 5.032,
+						"y": 5.032,
+						"curve": [ 0.402, 0.09, 0.989, 0.39 ]
+					},
+					{ "time": 0.5666, "x": 5.452, "y": 5.452 }
+				]
+			}
+		}
+	}
+}
+}
