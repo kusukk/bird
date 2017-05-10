@@ -6,7 +6,7 @@
 require "app.config.config"
 local utils = require("app.utils.utils")
 local UserData = require ("app.data.UserData")
-local SchedulerManager = require "app.mapscene.SchedulerManager"
+-- local SchedulerManager = require "app.mapscene.SchedulerManager"
 local elementsRes = require("app.config.ElementsResourceLoad")
 local loadingLayer = require('app.LoadingLayer')
 
@@ -45,7 +45,7 @@ function LoadingScene:ctor()
     self.lastEleRes = nil
     self.curEleRes = nil
     local lableConfig  = {
-        text =  mybo.MyboDevice:getLocalString("LoadingScene_00001"),
+        text =  "loading",
         font = "fonts/ABFlockText-Bold.ttf",
         size = 45,
         color = cc.c3b(255, 255, 255),
@@ -103,7 +103,7 @@ function LoadingScene:replaceScene(sceneName, ...)
         loadingLayer:getInstance():onLoop();
         loadingLayer:getInstance():removeFromParent()
         self:addChild(loadingLayer:getInstance())
-        SchedulerManager:getInstance():allStop()
+        -- SchedulerManager:getInstance():allStop()
         display.replaceScene(self)
 
         self.currentScene = sceneName

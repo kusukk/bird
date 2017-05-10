@@ -63,6 +63,7 @@
 		BB2EDB4D1EB33E9400F8AC14 /* SoundPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB2EDB4A1EB33E9400F8AC14 /* SoundPlayer.cpp */; };
 		BB2EDB501EB33EB400F8AC14 /* MyboDevice.mm in Sources */ = {isa = PBXBuildFile; fileRef = BB2EDB4F1EB33EB400F8AC14 /* MyboDevice.mm */; };
 		BB2EDB531EB3426800F8AC14 /* lua_mybo_sound_player_auto.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB2EDB521EB3426800F8AC14 /* lua_mybo_sound_player_auto.cpp */; };
+		BB32ADCF1EC1C3D90092E671 /* lua_mybo_spineCache_auto.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB32ADCE1EC1C3D90092E671 /* lua_mybo_spineCache_auto.cpp */; };
 		BB694AB51EB2E886008437AC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB694AB41EB2E886008437AC /* AVFoundation.framework */; };
 		C03781BB18BF655400FE4F13 /* src in Resources */ = {isa = PBXBuildFile; fileRef = C03781B818BF655400FE4F13 /* src */; };
 		C03781BC18BF655400FE4F13 /* src in Resources */ = {isa = PBXBuildFile; fileRef = C03781B818BF655400FE4F13 /* src */; };
@@ -247,6 +248,9 @@
 		BB2EDB4E1EB33EA500F8AC14 /* MyboDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MyboDevice.h; path = ../Classes/MyboDevice.h; sourceTree = "<group>"; };
 		BB2EDB4F1EB33EB400F8AC14 /* MyboDevice.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MyboDevice.mm; path = ../Classes/MyboDevice.mm; sourceTree = "<group>"; };
 		BB2EDB521EB3426800F8AC14 /* lua_mybo_sound_player_auto.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lua_mybo_sound_player_auto.cpp; sourceTree = "<group>"; };
+		BB2EDB561EB3521800F8AC14 /* lua_mybo_sound_player_auto.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = lua_mybo_sound_player_auto.hpp; sourceTree = "<group>"; };
+		BB32ADCB1EC1C3D20092E671 /* lua_mybo_spineCache_auto.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = lua_mybo_spineCache_auto.hpp; sourceTree = "<group>"; };
+		BB32ADCE1EC1C3D90092E671 /* lua_mybo_spineCache_auto.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lua_mybo_spineCache_auto.cpp; sourceTree = "<group>"; };
 		BB694AB41EB2E886008437AC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		C03781AE18BF654500FE4F13 /* cocos2d_lua_bindings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2d_lua_bindings.xcodeproj; path = "../../cocos2d-x/cocos/scripting/lua-bindings/proj.ios_mac/cocos2d_lua_bindings.xcodeproj"; sourceTree = "<group>"; };
 		C03781B818BF655400FE4F13 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; name = src; path = ../../../src; sourceTree = "<group>"; };
@@ -437,6 +441,9 @@
 		BB2EDB511EB3426800F8AC14 /* lua-bind */ = {
 			isa = PBXGroup;
 			children = (
+				BB32ADCB1EC1C3D20092E671 /* lua_mybo_spineCache_auto.hpp */,
+				BB2EDB561EB3521800F8AC14 /* lua_mybo_sound_player_auto.hpp */,
+				BB32ADCE1EC1C3D90092E671 /* lua_mybo_spineCache_auto.cpp */,
 				BB2EDB521EB3426800F8AC14 /* lua_mybo_sound_player_auto.cpp */,
 			);
 			name = "lua-bind";
@@ -778,6 +785,7 @@
 				BB2EDB531EB3426800F8AC14 /* lua_mybo_sound_player_auto.cpp in Sources */,
 				5023812517EBBCAC00990C9B /* RootViewController.mm in Sources */,
 				BB2EDB451EB33E8A00F8AC14 /* MusicFade.cpp in Sources */,
+				BB32ADCF1EC1C3D90092E671 /* lua_mybo_spineCache_auto.cpp in Sources */,
 				F293BB9C15EB831F00256477 /* AppDelegate.cpp in Sources */,
 				5023812417EBBCAC00990C9B /* main.m in Sources */,
 				BB2EDB461EB33E8A00F8AC14 /* SoundPlayer.cpp in Sources */,

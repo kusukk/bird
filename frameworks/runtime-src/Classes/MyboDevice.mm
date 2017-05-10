@@ -78,3 +78,8 @@ void MyboDevice::puaseMilleuBgMusic(){
     }
 }
 
+string MyboDevice::getAppVersion(){
+    NSString * version = [[NSBundle mainBundle]infoDictionary]
+    
+}
+

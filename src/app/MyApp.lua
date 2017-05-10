@@ -1,6 +1,6 @@
 require('config')
 require("cocos.init")
-require("socket")
+-- require("socket")
 local MyApp = class("MyApp", cc.load("mvc").AppBase)
 
 function MyApp:onCreate()
@@ -17,16 +17,16 @@ function MyApp:loadPackage()
     require("app.LoadingScene")
 end
 
-function MyApp:getAppVersion()
-    return mybo.MyboDevice:getAppVersion()
-end
+-- function MyApp:getAppVersion()
+--     return mybo.MyboDevice:getAppVersion()
+-- end
 
 function MyApp:addSearchPath()
     device.cachePath = device.writablePath
     local writablePath = device.writablePath
-    local appVersion = self:getAppVersion()
+    -- local appVersion = self:getAppVersion()
     local buildVersion = self:getBuildVersion()
-    local updatePath = writablePath.."update/"..appVersion.."/"
+    local updatePath = writablePath.."update/"
     cc.FileUtils:getInstance():addSearchPath(updatePath.."res/",true)
     cc.FileUtils:getInstance():addSearchPath(updatePath.."res/audio/",true)
     cc.FileUtils:getInstance():addSearchPath(updatePath.."res/effect/",true)

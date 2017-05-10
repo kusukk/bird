@@ -32,7 +32,13 @@ public:
     static bool isMilleuBgMusicPlaying();
     static bool isOtherAudioPlaying();
     
-
+    
+    static string getAppVersion();
+    static string getBuildID();
+    
+    static std::string getCountry();
+    static bool isLanguageHaveList();
+    static void goToComment();
 };
 
 #endif /* MyboDevice_h */
