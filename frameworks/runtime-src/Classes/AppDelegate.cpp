@@ -25,8 +25,12 @@ using namespace CocosDenshion;
 
 USING_NS_CC;
 using namespace std;
+//注册自己的c++转lua类
 static void myModule_register(lua_State*L){
-    lua_register_mybo_sound_player_SoundPlayer(L);
+    register_all_mybo_sound_player(L);
+    register_all_spineCache(L);
+    register_all_MyboDevice(L);
+    
     
 }
 AppDelegate::AppDelegate()
@@ -75,6 +79,7 @@ bool AppDelegate::applicationDidFinishLaunching()
     ScriptEngineManager::getInstance()->setScriptEngine(engine);
     lua_State* L = engine->getLuaStack()->getLuaState();
     lua_module_register(L);
+    myModule_register(L);
   
 
     register_all_packages();

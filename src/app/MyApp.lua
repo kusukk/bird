@@ -17,14 +17,14 @@ function MyApp:loadPackage()
     require("app.LoadingScene")
 end
 
--- function MyApp:getAppVersion()
---     return mybo.MyboDevice:getAppVersion()
--- end
+function MyApp:getAppVersion()
+    return mybo.MyboDevice:getAppVersion()
+end
 
 function MyApp:addSearchPath()
     device.cachePath = device.writablePath
     local writablePath = device.writablePath
-    -- local appVersion = self:getAppVersion()
+    local appVersion = self:getAppVersion()
     local buildVersion = self:getBuildVersion()
     local updatePath = writablePath.."update/"
     cc.FileUtils:getInstance():addSearchPath(updatePath.."res/",true)
@@ -99,8 +99,8 @@ function MyApp:sendErrorLog()
 end
 
 function MyApp:switchToStartScene()
-    local GameCenterIos =  require('app.utils.GameCenterIos')
-    GameCenterIos.gcLogin()
+    -- local GameCenterIos =  require('app.utils.GameCenterIos')
+    -- GameCenterIos.gcLogin()
     self:initData()
     -- self:sendErrorLog()
     self:initAudio()
@@ -132,8 +132,9 @@ function MyApp:unzipResource()
     local oldVersionList=string.split(oldVersion,'-')
     local oldAppVersion=oldVersionList[1]
     local oldBuildVersion=oldVersionList[2]
-
-    if mybo.AppGameConfig:GetIsForceUnzip() or (appVersion > oldAppVersion) or (appVersion == oldAppVersion and tonumber(buildVersion) > tonumber(oldBuildVersion)) then
+    -- 强制解压
+    local isForceUnzip = true
+    if isForceUnzip or (appVersion > oldAppVersion) or (appVersion == oldAppVersion and tonumber(buildVersion) > tonumber(oldBuildVersion)) then
         local zipPath = device.writablePath..extraPath
         if cc.FileUtils:getInstance():isDirectoryExist(zipPath) then
             cc.FileUtils:getInstance():removeDirectory(zipPath)

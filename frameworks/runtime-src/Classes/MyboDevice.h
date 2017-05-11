@@ -23,6 +23,10 @@ const static char* CHANNEL = "GooglePlay";
 
 class MyboDevice{
 public:
+    static std::string getCurLanguageKey();
+    static void setCurLanguageKey(const std::string key);
+
+    static std::string getLocalString(const std::string key,bool isSet=true);
     static void playMilieuBgMusic(const std::string musicName,bool loop=false);
     static void proloadMilleuBgMusic(const std::string musicName);
     static void stopMilleuBgMusic();

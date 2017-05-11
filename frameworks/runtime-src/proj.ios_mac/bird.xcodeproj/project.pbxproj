@@ -63,6 +63,8 @@
 		BB2EDB4D1EB33E9400F8AC14 /* SoundPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB2EDB4A1EB33E9400F8AC14 /* SoundPlayer.cpp */; };
 		BB2EDB501EB33EB400F8AC14 /* MyboDevice.mm in Sources */ = {isa = PBXBuildFile; fileRef = BB2EDB4F1EB33EB400F8AC14 /* MyboDevice.mm */; };
 		BB2EDB531EB3426800F8AC14 /* lua_mybo_sound_player_auto.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB2EDB521EB3426800F8AC14 /* lua_mybo_sound_player_auto.cpp */; };
+		BB30E5CB1EC46982006EB862 /* LoacalLanguage.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB30E5CD1EC46982006EB862 /* LoacalLanguage.strings */; };
+		BB30E5D61EC471B6006EB862 /* AppGameConfig.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB30E5D41EC471B6006EB862 /* AppGameConfig.cpp */; };
 		BB32ADCF1EC1C3D90092E671 /* lua_mybo_spineCache_auto.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB32ADCE1EC1C3D90092E671 /* lua_mybo_spineCache_auto.cpp */; };
 		BB32ADD61EC2E1940092E671 /* lua_mybo_myboDevice_auto.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB32ADD41EC2E1940092E671 /* lua_mybo_myboDevice_auto.cpp */; };
 		BB694AB51EB2E886008437AC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB694AB41EB2E886008437AC /* AVFoundation.framework */; };
@@ -250,6 +252,15 @@
 		BB2EDB4F1EB33EB400F8AC14 /* MyboDevice.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MyboDevice.mm; path = ../Classes/MyboDevice.mm; sourceTree = "<group>"; };
 		BB2EDB521EB3426800F8AC14 /* lua_mybo_sound_player_auto.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lua_mybo_sound_player_auto.cpp; sourceTree = "<group>"; };
 		BB2EDB561EB3521800F8AC14 /* lua_mybo_sound_player_auto.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = lua_mybo_sound_player_auto.hpp; sourceTree = "<group>"; };
+		BB30E5CC1EC46982006EB862 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LoacalLanguage.strings"; sourceTree = "<group>"; };
+		BB30E5CE1EC469B4006EB862 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/LoacalLanguage.strings; sourceTree = "<group>"; };
+		BB30E5CF1EC469B5006EB862 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LoacalLanguage.strings; sourceTree = "<group>"; };
+		BB30E5D01EC469FA006EB862 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		BB30E5D11EC469FA006EB862 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LoacalLanguage.strings; sourceTree = "<group>"; };
+		BB30E5D21EC46A05006EB862 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		BB30E5D31EC46A05006EB862 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LoacalLanguage.strings; sourceTree = "<group>"; };
+		BB30E5D41EC471B6006EB862 /* AppGameConfig.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppGameConfig.cpp; sourceTree = "<group>"; };
+		BB30E5D51EC471B6006EB862 /* AppGameConfig.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AppGameConfig.hpp; sourceTree = "<group>"; };
 		BB32ADCB1EC1C3D20092E671 /* lua_mybo_spineCache_auto.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = lua_mybo_spineCache_auto.hpp; sourceTree = "<group>"; };
 		BB32ADCE1EC1C3D90092E671 /* lua_mybo_spineCache_auto.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lua_mybo_spineCache_auto.cpp; sourceTree = "<group>"; };
 		BB32ADD41EC2E1940092E671 /* lua_mybo_myboDevice_auto.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lua_mybo_myboDevice_auto.cpp; sourceTree = "<group>"; };
@@ -343,6 +354,7 @@
 		5023810617EBBCAC00990C9B /* ios */ = {
 			isa = PBXGroup;
 			children = (
+				BB30E5CD1EC46982006EB862 /* LoacalLanguage.strings */,
 				521A8E6E19F0C3D200D177D7 /* Default-667h@2x.png */,
 				521A8E6F19F0C3D200D177D7 /* Default-736h@3x.png */,
 				5023810717EBBCAC00990C9B /* AppController.h */,
@@ -540,6 +552,8 @@
 		F293BB7C15EB830F00256477 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				BB30E5D41EC471B6006EB862 /* AppGameConfig.cpp */,
+				BB30E5D51EC471B6006EB862 /* AppGameConfig.hpp */,
 				BB2EDB4E1EB33EA500F8AC14 /* MyboDevice.h */,
 				BB2EDB511EB3426800F8AC14 /* lua-bind */,
 				BB2EDB471EB33E9400F8AC14 /* audio */,
@@ -628,6 +642,8 @@
 				en,
 				Base,
 				"zh-Hans",
+				fr,
+				es,
 			);
 			mainGroup = F293B3BD15EB7BE500256477;
 			productRefGroup = F293B3C915EB7BE500256477 /* Products */;
@@ -736,6 +752,7 @@
 				5023811B17EBBCAC00990C9B /* Default@2x.png in Resources */,
 				5091733617ECE17A00D62437 /* Icon-29.png in Resources */,
 				5023811917EBBCAC00990C9B /* Default-568h@2x.png in Resources */,
+				BB30E5CB1EC46982006EB862 /* LoacalLanguage.strings in Resources */,
 				5091733917ECE17A00D62437 /* Icon-58.png in Resources */,
 				5023811F17EBBCAC00990C9B /* Icon-152.png in Resources */,
 				5023812017EBBCAC00990C9B /* Icon-57.png in Resources */,
@@ -794,6 +811,7 @@
 				F293BB9C15EB831F00256477 /* AppDelegate.cpp in Sources */,
 				BB32ADD61EC2E1940092E671 /* lua_mybo_myboDevice_auto.cpp in Sources */,
 				5023812417EBBCAC00990C9B /* main.m in Sources */,
+				BB30E5D61EC471B6006EB862 /* AppGameConfig.cpp in Sources */,
 				BB2EDB461EB33E8A00F8AC14 /* SoundPlayer.cpp in Sources */,
 				BB2EDB3F1EB33E8000F8AC14 /* SpineCache.cpp in Sources */,
 				BB2EDB501EB33EB400F8AC14 /* MyboDevice.mm in Sources */,
@@ -848,8 +866,23 @@
 			children = (
 				9FFC07351A4A764100AED399 /* Base */,
 				9FFC07371A4A765100AED399 /* zh-Hans */,
+				BB30E5D01EC469FA006EB862 /* fr */,
+				BB30E5D21EC46A05006EB862 /* es */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		BB30E5CD1EC46982006EB862 /* LoacalLanguage.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB30E5CC1EC46982006EB862 /* zh-Hans */,
+				BB30E5CE1EC469B4006EB862 /* Base */,
+				BB30E5CF1EC469B5006EB862 /* en */,
+				BB30E5D11EC469FA006EB862 /* fr */,
+				BB30E5D31EC46A05006EB862 /* es */,
+			);
+			name = LoacalLanguage.strings;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
