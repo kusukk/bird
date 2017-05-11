@@ -79,7 +79,33 @@ void MyboDevice::puaseMilleuBgMusic(){
 }
 
 string MyboDevice::getAppVersion(){
-    NSString * version = [[NSBundle mainBundle]infoDictionary]
+    NSString * version = [[[NSBundle mainBundle]infoDictionary] objectForKey:@"CFBundleShortVersionString"];
+    return [version UTF8String];
     
 }
+
+std::string MyboDevice::getBuildVersion(){
+    NSString * version = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];
+    return [version UTF8String];
+}
+
+std::string MyboDevice::getBuildID(){
+    NSString * id = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleIdentifier"];
+    return [id UTF8String];
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

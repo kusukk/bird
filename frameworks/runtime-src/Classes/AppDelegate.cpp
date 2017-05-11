@@ -3,7 +3,11 @@
 #include "cocos2d.h"
 #include "scripting/lua-bindings/manual/lua_module_register.h"
 #include "SimpleAudioEngine.h"
+#include "lua_module_register.h"
 
+#include "lua-bind/lua_mybo_myboDevice_auto.hpp"
+#include "lua-bind/lua_mybo_sound_player_auto.hpp"
+#include "lua-bind/lua_mybo_spineCache_auto.hpp"
 // #define USE_AUDIO_ENGINE 1
 // #define USE_SIMPLE_AUDIO_ENGINE 1
 
@@ -21,7 +25,10 @@ using namespace CocosDenshion;
 
 USING_NS_CC;
 using namespace std;
-
+static void myModule_register(lua_State*L){
+    lua_register_mybo_sound_player_SoundPlayer(L);
+    
+}
 AppDelegate::AppDelegate()
 {
 }
@@ -68,6 +75,7 @@ bool AppDelegate::applicationDidFinishLaunching()
     ScriptEngineManager::getInstance()->setScriptEngine(engine);
     lua_State* L = engine->getLuaStack()->getLuaState();
     lua_module_register(L);
+  
 
     register_all_packages();
 

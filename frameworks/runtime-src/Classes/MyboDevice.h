@@ -35,10 +35,17 @@ public:
     
     static string getAppVersion();
     static string getBuildID();
+    static std::string getBuildVersion();
     
-    static std::string getCountry();
-    static bool isLanguageHaveList();
-    static void goToComment();
+    
+//    typedef std::function<void(int code)> resultCallback;
+//#if (CC_TAEGET_PLATFORM == CC_PLATFORM_IOS)
+//    static void loadFile(const char*fileName,const resultCallback& result,int resultCode);
+//    
+//    static boool isFilePathInDocument(cons)
+//    static std::string getCountry();
+//    static bool isLanguageHaveList();
+//    static void goToComment();
 };
 
 #endif /* MyboDevice_h */

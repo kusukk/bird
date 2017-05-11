@@ -140,7 +140,8 @@ def main():
 
         cmd_args = {'cocos2dx.ini' : ('cocos2d-x', 'lua_cocos2dx_auto'), \
 #                    'mybo_sound_player.ini':('mybo_sound_player','lua_mybo_sound_player_auto'),\ 
-                      'mybo_spineCache.ini':('mybo_spineCache','lua_mybo_spineCache_auto'),\
+#                      'mybo_spineCache.ini':('mybo_spineCache','lua_mybo_spineCache_auto'),\
+                      'myboDevice.ini':('MyboDevice','lua_mybo_myboDevice_auto'),\
 
                     }
         target = 'lua'
