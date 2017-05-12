@@ -5,10 +5,9 @@
 
 --------------------------------
 -- 
--- @function [parent=#MyboDevice] playMilieuBgMusic 
+-- @function [parent=#MyboDevice] setCurLanguageKey 
 -- @param self
--- @param #string musicName
--- @param #bool loop
+-- @param #string key
 -- @return MyboDevice#MyboDevice self (return value: MyboDevice)
         
 --------------------------------
@@ -19,8 +18,24 @@
         
 --------------------------------
 -- 
+-- @function [parent=#MyboDevice] playMilieuBgMusic 
+-- @param self
+-- @param #string musicName
+-- @param #bool loop
+-- @return MyboDevice#MyboDevice self (return value: MyboDevice)
+        
+--------------------------------
+-- 
 -- @function [parent=#MyboDevice] getBuildID 
 -- @param self
+-- @return string#string ret (return value: string)
+        
+--------------------------------
+-- 
+-- @function [parent=#MyboDevice] getLocalString 
+-- @param self
+-- @param #string key
+-- @param #bool isSet
 -- @return string#string ret (return value: string)
         
 --------------------------------
@@ -31,9 +46,8 @@
         
 --------------------------------
 -- 
--- @function [parent=#MyboDevice] setMilleuBgMusicVolume 
+-- @function [parent=#MyboDevice] resumeMilleuBgMusic 
 -- @param self
--- @param #float volume
 -- @return MyboDevice#MyboDevice self (return value: MyboDevice)
         
 --------------------------------
@@ -57,9 +71,16 @@
         
 --------------------------------
 -- 
--- @function [parent=#MyboDevice] resumeMilleuBgMusic 
+-- @function [parent=#MyboDevice] setMilleuBgMusicVolume 
 -- @param self
+-- @param #float volume
 -- @return MyboDevice#MyboDevice self (return value: MyboDevice)
+        
+--------------------------------
+-- 
+-- @function [parent=#MyboDevice] getCurLanguageKey 
+-- @param self
+-- @return string#string ret (return value: string)
         
 --------------------------------
 -- 

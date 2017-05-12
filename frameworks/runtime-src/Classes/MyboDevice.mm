@@ -11,6 +11,8 @@
 #include "SoundPlayer.h"
 #import <AudioToolbox/AudioToolbox.h>
 #import <AVFoundation/AVFoundation.h>
+#include "AppGameConfig.hpp"
+#include "scripting/lua-bindings/manual/CCLuaEngine.h"
 
 static bool m_isEqual = false;
 static std::string m_CurLanguageKey ="";

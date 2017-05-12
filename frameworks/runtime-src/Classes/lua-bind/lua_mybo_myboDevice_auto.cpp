@@ -1,8 +1,78 @@
-#include "scripting/lua-bindings/auto/lua_mybo_myboDevice_auto.hpp"
+#include "lua-bind/lua_mybo_myboDevice_auto.hpp"
 #include "MyboDevice.h"
 #include "scripting/lua-bindings/manual/tolua_fix.h"
 #include "scripting/lua-bindings/manual/LuaBasicConversions.h"
 
+int lua_MyboDevice_MyboDevice_setCurLanguageKey(lua_State* tolua_S)
+{
+    int argc = 0;
+    bool ok  = true;
+
+#if COCOS2D_DEBUG >= 1
+    tolua_Error tolua_err;
+#endif
+
+#if COCOS2D_DEBUG >= 1
+    if (!tolua_isusertable(tolua_S,1,"MyboDevice",0,&tolua_err)) goto tolua_lerror;
+#endif
+
+    argc = lua_gettop(tolua_S) - 1;
+
+    if (argc == 1)
+    {
+        std::string arg0;
+        ok &= luaval_to_std_string(tolua_S, 2,&arg0, "MyboDevice:setCurLanguageKey");
+        if(!ok)
+        {
+            tolua_error(tolua_S,"invalid arguments in function 'lua_MyboDevice_MyboDevice_setCurLanguageKey'", nullptr);
+            return 0;
+        }
+        MyboDevice::setCurLanguageKey(arg0);
+        lua_settop(tolua_S, 1);
+        return 1;
+    }
+    luaL_error(tolua_S, "%s has wrong number of arguments: %d, was expecting %d\n ", "MyboDevice:setCurLanguageKey",argc, 1);
+    return 0;
+#if COCOS2D_DEBUG >= 1
+    tolua_lerror:
+    tolua_error(tolua_S,"#ferror in function 'lua_MyboDevice_MyboDevice_setCurLanguageKey'.",&tolua_err);
+#endif
+    return 0;
+}
+int lua_MyboDevice_MyboDevice_puaseMilleuBgMusic(lua_State* tolua_S)
+{
+    int argc = 0;
+    bool ok  = true;
+
+#if COCOS2D_DEBUG >= 1
+    tolua_Error tolua_err;
+#endif
+
+#if COCOS2D_DEBUG >= 1
+    if (!tolua_isusertable(tolua_S,1,"MyboDevice",0,&tolua_err)) goto tolua_lerror;
+#endif
+
+    argc = lua_gettop(tolua_S) - 1;
+
+    if (argc == 0)
+    {
+        if(!ok)
+        {
+            tolua_error(tolua_S,"invalid arguments in function 'lua_MyboDevice_MyboDevice_puaseMilleuBgMusic'", nullptr);
+            return 0;
+        }
+        MyboDevice::puaseMilleuBgMusic();
+        lua_settop(tolua_S, 1);
+        return 1;
+    }
+    luaL_error(tolua_S, "%s has wrong number of arguments: %d, was expecting %d\n ", "MyboDevice:puaseMilleuBgMusic",argc, 0);
+    return 0;
+#if COCOS2D_DEBUG >= 1
+    tolua_lerror:
+    tolua_error(tolua_S,"#ferror in function 'lua_MyboDevice_MyboDevice_puaseMilleuBgMusic'.",&tolua_err);
+#endif
+    return 0;
+}
 int lua_MyboDevice_MyboDevice_playMilieuBgMusic(lua_State* tolua_S)
 {
     int argc = 0;
@@ -54,40 +124,6 @@ int lua_MyboDevice_MyboDevice_playMilieuBgMusic(lua_State* tolua_S)
 #endif
     return 0;
 }
-int lua_MyboDevice_MyboDevice_puaseMilleuBgMusic(lua_State* tolua_S)
-{
-    int argc = 0;
-    bool ok  = true;
-
-#if COCOS2D_DEBUG >= 1
-    tolua_Error tolua_err;
-#endif
-
-#if COCOS2D_DEBUG >= 1
-    if (!tolua_isusertable(tolua_S,1,"MyboDevice",0,&tolua_err)) goto tolua_lerror;
-#endif
-
-    argc = lua_gettop(tolua_S) - 1;
-
-    if (argc == 0)
-    {
-        if(!ok)
-        {
-            tolua_error(tolua_S,"invalid arguments in function 'lua_MyboDevice_MyboDevice_puaseMilleuBgMusic'", nullptr);
-            return 0;
-        }
-        MyboDevice::puaseMilleuBgMusic();
-        lua_settop(tolua_S, 1);
-        return 1;
-    }
-    luaL_error(tolua_S, "%s has wrong number of arguments: %d, was expecting %d\n ", "MyboDevice:puaseMilleuBgMusic",argc, 0);
-    return 0;
-#if COCOS2D_DEBUG >= 1
-    tolua_lerror:
-    tolua_error(tolua_S,"#ferror in function 'lua_MyboDevice_MyboDevice_puaseMilleuBgMusic'.",&tolua_err);
-#endif
-    return 0;
-}
 int lua_MyboDevice_MyboDevice_getBuildID(lua_State* tolua_S)
 {
     int argc = 0;
@@ -119,6 +155,57 @@ int lua_MyboDevice_MyboDevice_getBuildID(lua_State* tolua_S)
 #if COCOS2D_DEBUG >= 1
     tolua_lerror:
     tolua_error(tolua_S,"#ferror in function 'lua_MyboDevice_MyboDevice_getBuildID'.",&tolua_err);
+#endif
+    return 0;
+}
+int lua_MyboDevice_MyboDevice_getLocalString(lua_State* tolua_S)
+{
+    int argc = 0;
+    bool ok  = true;
+
+#if COCOS2D_DEBUG >= 1
+    tolua_Error tolua_err;
+#endif
+
+#if COCOS2D_DEBUG >= 1
+    if (!tolua_isusertable(tolua_S,1,"MyboDevice",0,&tolua_err)) goto tolua_lerror;
+#endif
+
+    argc = lua_gettop(tolua_S) - 1;
+
+    if (argc == 1)
+    {
+        std::string arg0;
+        ok &= luaval_to_std_string(tolua_S, 2,&arg0, "MyboDevice:getLocalString");
+        if(!ok)
+        {
+            tolua_error(tolua_S,"invalid arguments in function 'lua_MyboDevice_MyboDevice_getLocalString'", nullptr);
+            return 0;
+        }
+        std::string ret = MyboDevice::getLocalString(arg0);
+        lua_pushlstring(tolua_S,ret.c_str(),ret.length());
+        return 1;
+    }
+    if (argc == 2)
+    {
+        std::string arg0;
+        bool arg1;
+        ok &= luaval_to_std_string(tolua_S, 2,&arg0, "MyboDevice:getLocalString");
+        ok &= luaval_to_boolean(tolua_S, 3,&arg1, "MyboDevice:getLocalString");
+        if(!ok)
+        {
+            tolua_error(tolua_S,"invalid arguments in function 'lua_MyboDevice_MyboDevice_getLocalString'", nullptr);
+            return 0;
+        }
+        std::string ret = MyboDevice::getLocalString(arg0, arg1);
+        lua_pushlstring(tolua_S,ret.c_str(),ret.length());
+        return 1;
+    }
+    luaL_error(tolua_S, "%s has wrong number of arguments: %d, was expecting %d\n ", "MyboDevice:getLocalString",argc, 1);
+    return 0;
+#if COCOS2D_DEBUG >= 1
+    tolua_lerror:
+    tolua_error(tolua_S,"#ferror in function 'lua_MyboDevice_MyboDevice_getLocalString'.",&tolua_err);
 #endif
     return 0;
 }
@@ -156,7 +243,7 @@ int lua_MyboDevice_MyboDevice_stopMilleuBgMusic(lua_State* tolua_S)
 #endif
     return 0;
 }
-int lua_MyboDevice_MyboDevice_setMilleuBgMusicVolume(lua_State* tolua_S)
+int lua_MyboDevice_MyboDevice_resumeMilleuBgMusic(lua_State* tolua_S)
 {
     int argc = 0;
     bool ok  = true;
@@ -171,24 +258,22 @@ int lua_MyboDevice_MyboDevice_setMilleuBgMusicVolume(lua_State* tolua_S)
 
     argc = lua_gettop(tolua_S) - 1;
 
-    if (argc == 1)
+    if (argc == 0)
     {
-        double arg0;
-        ok &= luaval_to_number(tolua_S, 2,&arg0, "MyboDevice:setMilleuBgMusicVolume");
         if(!ok)
         {
-            tolua_error(tolua_S,"invalid arguments in function 'lua_MyboDevice_MyboDevice_setMilleuBgMusicVolume'", nullptr);
+            tolua_error(tolua_S,"invalid arguments in function 'lua_MyboDevice_MyboDevice_resumeMilleuBgMusic'", nullptr);
             return 0;
         }
-        MyboDevice::setMilleuBgMusicVolume(arg0);
+        MyboDevice::resumeMilleuBgMusic();
         lua_settop(tolua_S, 1);
         return 1;
     }
-    luaL_error(tolua_S, "%s has wrong number of arguments: %d, was expecting %d\n ", "MyboDevice:setMilleuBgMusicVolume",argc, 1);
+    luaL_error(tolua_S, "%s has wrong number of arguments: %d, was expecting %d\n ", "MyboDevice:resumeMilleuBgMusic",argc, 0);
     return 0;
 #if COCOS2D_DEBUG >= 1
     tolua_lerror:
-    tolua_error(tolua_S,"#ferror in function 'lua_MyboDevice_MyboDevice_setMilleuBgMusicVolume'.",&tolua_err);
+    tolua_error(tolua_S,"#ferror in function 'lua_MyboDevice_MyboDevice_resumeMilleuBgMusic'.",&tolua_err);
 #endif
     return 0;
 }
@@ -296,7 +381,43 @@ int lua_MyboDevice_MyboDevice_getAppVersion(lua_State* tolua_S)
 #endif
     return 0;
 }
-int lua_MyboDevice_MyboDevice_resumeMilleuBgMusic(lua_State* tolua_S)
+int lua_MyboDevice_MyboDevice_setMilleuBgMusicVolume(lua_State* tolua_S)
+{
+    int argc = 0;
+    bool ok  = true;
+
+#if COCOS2D_DEBUG >= 1
+    tolua_Error tolua_err;
+#endif
+
+#if COCOS2D_DEBUG >= 1
+    if (!tolua_isusertable(tolua_S,1,"MyboDevice",0,&tolua_err)) goto tolua_lerror;
+#endif
+
+    argc = lua_gettop(tolua_S) - 1;
+
+    if (argc == 1)
+    {
+        double arg0;
+        ok &= luaval_to_number(tolua_S, 2,&arg0, "MyboDevice:setMilleuBgMusicVolume");
+        if(!ok)
+        {
+            tolua_error(tolua_S,"invalid arguments in function 'lua_MyboDevice_MyboDevice_setMilleuBgMusicVolume'", nullptr);
+            return 0;
+        }
+        MyboDevice::setMilleuBgMusicVolume(arg0);
+        lua_settop(tolua_S, 1);
+        return 1;
+    }
+    luaL_error(tolua_S, "%s has wrong number of arguments: %d, was expecting %d\n ", "MyboDevice:setMilleuBgMusicVolume",argc, 1);
+    return 0;
+#if COCOS2D_DEBUG >= 1
+    tolua_lerror:
+    tolua_error(tolua_S,"#ferror in function 'lua_MyboDevice_MyboDevice_setMilleuBgMusicVolume'.",&tolua_err);
+#endif
+    return 0;
+}
+int lua_MyboDevice_MyboDevice_getCurLanguageKey(lua_State* tolua_S)
 {
     int argc = 0;
     bool ok  = true;
@@ -315,18 +436,18 @@ int lua_MyboDevice_MyboDevice_resumeMilleuBgMusic(lua_State* tolua_S)
     {
         if(!ok)
         {
-            tolua_error(tolua_S,"invalid arguments in function 'lua_MyboDevice_MyboDevice_resumeMilleuBgMusic'", nullptr);
+            tolua_error(tolua_S,"invalid arguments in function 'lua_MyboDevice_MyboDevice_getCurLanguageKey'", nullptr);
             return 0;
         }
-        MyboDevice::resumeMilleuBgMusic();
-        lua_settop(tolua_S, 1);
+        std::string ret = MyboDevice::getCurLanguageKey();
+        lua_pushlstring(tolua_S,ret.c_str(),ret.length());
         return 1;
     }
-    luaL_error(tolua_S, "%s has wrong number of arguments: %d, was expecting %d\n ", "MyboDevice:resumeMilleuBgMusic",argc, 0);
+    luaL_error(tolua_S, "%s has wrong number of arguments: %d, was expecting %d\n ", "MyboDevice:getCurLanguageKey",argc, 0);
     return 0;
 #if COCOS2D_DEBUG >= 1
     tolua_lerror:
-    tolua_error(tolua_S,"#ferror in function 'lua_MyboDevice_MyboDevice_resumeMilleuBgMusic'.",&tolua_err);
+    tolua_error(tolua_S,"#ferror in function 'lua_MyboDevice_MyboDevice_getCurLanguageKey'.",&tolua_err);
 #endif
     return 0;
 }
@@ -410,15 +531,18 @@ int lua_register_MyboDevice_MyboDevice(lua_State* tolua_S)
     tolua_cclass(tolua_S,"MyboDevice","MyboDevice","",nullptr);
 
     tolua_beginmodule(tolua_S,"MyboDevice");
-        tolua_function(tolua_S,"playMilieuBgMusic", lua_MyboDevice_MyboDevice_playMilieuBgMusic);
+        tolua_function(tolua_S,"setCurLanguageKey", lua_MyboDevice_MyboDevice_setCurLanguageKey);
         tolua_function(tolua_S,"puaseMilleuBgMusic", lua_MyboDevice_MyboDevice_puaseMilleuBgMusic);
+        tolua_function(tolua_S,"playMilieuBgMusic", lua_MyboDevice_MyboDevice_playMilieuBgMusic);
         tolua_function(tolua_S,"getBuildID", lua_MyboDevice_MyboDevice_getBuildID);
+        tolua_function(tolua_S,"getLocalString", lua_MyboDevice_MyboDevice_getLocalString);
         tolua_function(tolua_S,"stopMilleuBgMusic", lua_MyboDevice_MyboDevice_stopMilleuBgMusic);
-        tolua_function(tolua_S,"setMilleuBgMusicVolume", lua_MyboDevice_MyboDevice_setMilleuBgMusicVolume);
+        tolua_function(tolua_S,"resumeMilleuBgMusic", lua_MyboDevice_MyboDevice_resumeMilleuBgMusic);
         tolua_function(tolua_S,"getBuildVersion", lua_MyboDevice_MyboDevice_getBuildVersion);
         tolua_function(tolua_S,"proloadMilleuBgMusic", lua_MyboDevice_MyboDevice_proloadMilleuBgMusic);
         tolua_function(tolua_S,"getAppVersion", lua_MyboDevice_MyboDevice_getAppVersion);
-        tolua_function(tolua_S,"resumeMilleuBgMusic", lua_MyboDevice_MyboDevice_resumeMilleuBgMusic);
+        tolua_function(tolua_S,"setMilleuBgMusicVolume", lua_MyboDevice_MyboDevice_setMilleuBgMusicVolume);
+        tolua_function(tolua_S,"getCurLanguageKey", lua_MyboDevice_MyboDevice_getCurLanguageKey);
         tolua_function(tolua_S,"isMilleuBgMusicPlaying", lua_MyboDevice_MyboDevice_isMilleuBgMusicPlaying);
         tolua_function(tolua_S,"isOtherAudioPlaying", lua_MyboDevice_MyboDevice_isOtherAudioPlaying);
     tolua_endmodule(tolua_S);

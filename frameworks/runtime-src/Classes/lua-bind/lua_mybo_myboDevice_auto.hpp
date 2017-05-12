@@ -24,4 +24,7 @@ int register_all_MyboDevice(lua_State* tolua_S);
 
 
 
+
+
+
 #endif // __MyboDevice_h__

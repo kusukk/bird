@@ -14,7 +14,7 @@ function LoadingLayer:getInstance()
 		LoadingLay:retain()
 	end
 
-	if LoadingLay.listener = nil then
+	if LoadingLay.listener == nil then
 		loadingLay:regListener()
 	end
 	return LoadingLay

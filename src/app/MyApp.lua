@@ -1,5 +1,6 @@
 require('config')
 require("cocos.init")
+require("app.extern.scheduler")
 -- require("socket")
 local MyApp = class("MyApp", cc.load("mvc").AppBase)
 
@@ -89,7 +90,7 @@ function MyApp:initData()
     UserData:init()
 
     -- LogData init
-    LogData:init()
+    -- LogData:init()
 end
 
 function MyApp:sendErrorLog()
@@ -175,7 +176,19 @@ function MyApp:unzipResource()
 end
 
 function MyApp:delayToSwitch()
-    local scheduler = require(cc.PACKAGE_NAME .. ".scheduler")
+    local updateID,time
+    local scduduler = cc.Director:getInstance():getScheduler()
+    local function update(dt)
+        time = time+dt
+        if time>1 then
+            self:switchToStartScene()
+            scheduler:unscheduleScriptEntry(updateID)
+        end
+    end
+
+    updateID = scheduler:scheduleScriptFunc(update,1,false)
+
+    local scheduler = require(cc.PACKAGE_NAME .. ".`")
     scheduler.performWithDelayGlobal(function()
         self:switchToStartScene()
     end,1)
